@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinaara the Cafe</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header bg-[#f5e2d7]">
+        <div class="container mx-auto">
+            <header>
+                <nav class="mx-auto flex items-center justify-between ps-4 pe-4 pt-4 md:p-6 lg:px-8"
+                    aria-label="Global">
+                    <!-- Logo -->
+                    <div class="flex lg:flex-1">
+                        <a href="#" class="-m-1.5 p-1.5 ps-0">
+                            <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]"
+                                src="../images/logo.png" alt="Kinaara Logo">
+                        </a>
+                    </div>
+                    <!-- Mobile Hamburger Menu -->
+                    <div class="flex lg:hidden">
+                        <button type="button"
+                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Navigation Links (Hidden on Mobile) -->
+                    <div class="hidden lg:flex lg:gap-x-12">
+                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
+                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
+                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
+                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
+                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
+                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
+                    </div>
+                    <!-- Place Order Button -->
+                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <a href="#"
+                            class="text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                            PLACE ORDER
+                        </a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-[#f5e2d7] relative">
+        <div class="container mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 items-center">
+                <!-- Text Content -->
+                <div class="lg:space-y-6 text-center lg:text-left ">
+                    <h2 class="text-[#7c4d3a] text-sm md:text-3xl xl:text-7xl font-bold otomanopee">
+                        KINAARA <span class="text-black">THE</span>
+                    </h2>
+                    <h2 class="text-base text-black md:text-3xl xl:text-7xl font-bold otomanopee">CAFÉ</h2>
+                    <p class="text-xs text-gray-600 lg:text-lg md:text-sm inter font-[25px] text-[#848484]">"A Blend Of
+                        Passion And Perfection In Every Cup"</p>
+                    <a href="#"
+                        class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-xs  lg:text-base rounded hover:bg-[#7c4d3a] hover:text-white">
+                        PLACE ORDER
+                    </a>
+                </div>
+                <!-- Coffee Cup Image -->
+                <div class="justify-end">
+                    <img src="../images/cofee-image.png" alt="Coffee Cup">
+                </div>
+            </div>
+        </div>
+        <!-- Wavy Bottom -->
+        <div class="wav-image absolute left-[-200px] lg:top-[-150px] lg:left-[0px]">
+            <img src="../images/flower.png" alt="Wavy Background">
+        </div>
+        <div class="wav-image absolute left-[-200px] xl:top-[400px] xl:left-[-20px] origin-bottom -rotate-12">
+            <img src="../images/coffee.png" class="w-[98px] h-[98px]" alt="Wavy Background">
+        </div>
+        <div class="wav-image absolute md:top-[285px] lg:top-[365px] xl:top-[564px] top-[110px]">
+            <img src="../images/pseudo-removebg-preview.png" alt="Wavy Background">
+        </div>
+    </section>
+
+
+</body>
+
+</html>
