@@ -7,6 +7,7 @@
     <title>Kinaara the Cafe</title>
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -57,40 +58,370 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="bg-[#f5e2d7] relative">
-        <div class="container mx-auto px-6 lg:px-8">
-            <div class="grid grid-cols-2 items-center">
-                <!-- Text Content -->
-                <div class="lg:space-y-6 text-center lg:text-left ">
-                    <h2 class="text-[#7c4d3a] text-sm md:text-3xl xl:text-7xl font-bold otomanopee">
-                        KINAARA <span class="text-black">THE</span>
-                    </h2>
-                    <h2 class="text-base text-black md:text-3xl xl:text-7xl font-bold otomanopee">CAFÉ</h2>
-                    <p class="text-xs text-gray-600 lg:text-lg md:text-sm inter font-[25px] text-[#848484]">"A Blend Of
-                        Passion And Perfection In Every Cup"</p>
-                    <a href="#"
-                        class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-xs  lg:text-base rounded hover:bg-[#7c4d3a] hover:text-white">
-                        PLACE ORDER
-                    </a>
+    <!-- banner Section -->
+    <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-80">
+        <div>
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="grid grid-cols-1 my-auto">
+                    <!-- Text Content -->
+                    <div class="space-y-1 md:space-y-6 text-left">
+                        <h2 class="text-[#7c4d3a] text-sm md:text-3xl xl:text-7xl font-bold otomanopee">
+                            KINAARA <span class="text-black">THE</span>
+                        </h2>
+                        <h2 class="text-base text-black md:text-3xl xl:text-7xl font-bold otomanopee">CAFÉ</h2>
+                        <p class="text-xs text-gray-600 lg:text-lg md:text-sm inter text-[#848484]">
+                            "A Blend Of Passion And <br> Perfection In Every Cup"
+                        </p>
+                        <a href="#"
+                            class=" otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-xs lg:text-base rounded hover:bg-[#7c4d3a] hover:text-white">
+                            PLACE ORDER
+                        </a>
+                    </div>
                 </div>
-                <!-- Coffee Cup Image -->
-                <div class="justify-end">
-                    <img src="../images/cofee-image.png" alt="Coffee Cup">
+                <div></div>
+            </div>
+
+            <!-- Coffee Cup Image -->
+            <div class="absolute right-0 bottom-0 w-[45%] sm:w-[30%] md:w-[30%] lg:w-[35%] xl:w-[40%]">
+                <img src="../images/cofee-image.png" class="w-full" alt="Coffee Cup">
+            </div>
+
+            <!-- Wavy Background -->
+            <div class="absolute bottom-0 left-0 w-full">
+                <img src="../images/pseudo.svg" class="w-full" alt="Wavy Background">
+            </div>
+
+            <!-- Decorative Flower Image -->
+            <div class="absolute hidden lg:block lg:top-[-150px] lg:left-0">
+                <img src="../images/flower.png" class="" alt="Decorative Flower">
+            </div>
+
+            <!-- Decorative Coffee Bean -->
+            <div class="absolute hidden lg:block xl:top-[400px] xl:left-[-20px] transform origin-bottom -rotate-12">
+                <img src="../images/coffee.png" class="md:w-[80px] md:h-[80px] xl:w-[98px] xl:h-[98px]"
+                    alt="Coffee Bean">
+            </div>
+        </div>
+    </section>
+
+    <!-- About us section -->
+    <section class="bg-[#F0ECEB] py-16">
+        <div class="container mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
+                <!-- Coffee Image -->
+                <div class="relative flex justify-center lg:justify-start">
+                    <div>
+                        <img src="../images/coffee-cup.png" alt="Coffee Cup Splash"
+                            class="w-[80%] md:w-[60%] lg:w-[80%] mx-auto lg:mx-0">
+                        <img src="../images/Pan Image.png"
+                            class="absolute hidden lg:block lg:left-[230px] lg:top-[125px] w-[50%] "
+                            alt="Coffee Cup Splash">
+                        <img src="../images/coffee-design.png"
+                            class="absolute hidden lg:block lg:left-0 lg:top-0 w-full" alt="Coffee Cup Splash">
+                    </div>
+
+                </div>
+
+                <!-- Text Content -->
+                <div class="space-y-6 text-left">
+                    <div class="heading relative">
+                        <div>
+                            <h2 class="text-[#7c4d3a] text-3xl lg:text-5xl font-bold pb-12 otomanopee">ABOUT <span
+                                    class="text-black">US</span></h2>
+                            <img src="../images/Heading-coffee-image.png"
+                                class="absolute w-[35%] -top-5 right-[110px] sm:-top-16 sm:right-[300px] md:-top-20 md:right-[400px]  lg:-top-8 lg:right-[100px] xl:-top-16 xl:right-[300px] opacity-25	"
+                                alt="">
+                        </div>
+                    </div>
+                    <ul class="text-sm md:text-lg text-gray-700 space-y-4 inter">
+                        <li class="flex items-start">
+                            <span class="text-[#7c4d3a] text-xl md:text-2xl mr-3">&#10003;</span>
+                            <p>Situated At Coast Of Tapi River</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#7c4d3a] text-xl md:text-2xl mr-3">&#10003;</span>
+                            <p>Featuring An Ambience Which Rejuvenates You Every Time You Visit Us.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#7c4d3a] text-xl md:text-2xl mr-3">&#10003;</span>
+                            <p>Don't Forget To Try Our Inventive Drinks. It Will Be A Sure Shot Pleasure To Your Taste
+                                Buds Too.</p>
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white">
+                        View More
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- Wavy Bottom -->
-        <div class="wav-image absolute left-[-200px] lg:top-[-150px] lg:left-[0px]">
-            <img src="../images/flower.png" alt="Wavy Background">
+    </section>
+
+    <!-- gallery section -->
+    <section class="bg-[#f5e2d7] relative">
+        <div>
+            <div class="container mx-auto">
+                <div class="min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 py-10">
+                    <!-- Title -->
+                    <div class="heading relative text-center lg:my-16">
+                        <div>
+                            <h2 class="text-[#7c4d3a] text-3xl lg:text-5xl font-bold pb-12 otomanopee">GALLERY</h2>
+                            <img src="../images/Heading-coffee-image.png"
+                                class="absolute w-[35%] md:w-[20%] -top-6 right-[20px] sm:-top-16 sm:right-[70px] md:-top-7 md:right-[160px]  lg:-top-8 lg:right-[180px] xl:-top-20 xl:right-[360px] opacity-25	"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <!-- Gallery Section -->
+                    <div class="flex items-center justify-between">
+
+                        <!-- Image Gallery -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full">
+                            <!-- Ice Cream Card -->
+                            <div class="relative group">
+                                <img src="../images/gallary-1.jpeg" alt="Ice Cream"
+                                    class="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300" />
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0  group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <p class="text-white text-lg font-bold">ICE CREAM</p>
+                                </div>
+                            </div>
+
+                            <!-- Coffee Card -->
+                            <div class="relative group lg:translate-y-16">
+                                <img src="../images/gallery-2.jpeg" alt="Coffee"
+                                    class="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300" />
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <p class="text-white text-lg font-bold">ICE CREAM</p>
+                                </div>
+                            </div>
+
+                            <!-- Cake Card -->
+                            <div class="relative group">
+                                <img src="../images/gallery-3.jpeg" alt="Cake"
+                                    class="w-full h-full object-cover rounded-lg shadow-m transition-transform duration-300" />
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <p class="text-white text-lg font-bold">ICE CREAM</p>
+                                </div>
+                            </div>
+
+                            <!-- Latte Card -->
+                            <div class="relative group lg:translate-y-16">
+                                <img src="../images/gallery-4.jpeg" alt="Latte"
+                                    class="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300" />
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <p class="text-white text-lg font-bold">ICE CREAM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- View More Button -->
+                    <div class="text-center mt-5   md:my-32">
+                        <button
+                            class="border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-colors">
+                            View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Wavy Background -->
+            <div class="absolute top-0 left-0 w-full">
+                <img src="../images/gallery-wave-1.png" class="w-full" alt="Wavy Background">
+            </div>
+            <div class="absolute bottom-0 left-0 w-full">
+                <img src="../images/gallery-wave-2.png" class="w-full" alt="Wavy Background">
+            </div>
+
         </div>
-        <div class="wav-image absolute left-[-200px] xl:top-[400px] xl:left-[-20px] origin-bottom -rotate-12">
-            <img src="../images/coffee.png" class="w-[98px] h-[98px]" alt="Wavy Background">
-        </div>
-        <div class="wav-image absolute md:top-[285px] lg:top-[365px] xl:top-[564px] top-[110px]">
-            <img src="../images/pseudo-removebg-preview.png" alt="Wavy Background">
+
+    </section>
+
+    <!-- Advataisment -->
+    <section class="bg-[#F0ECEB]">
+        <div class="py-8">
+            <div class="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+                <!-- Black ripped background -->
+                <div class="relative text-white lg:p-16 overflow-hidden ">
+                    <div>
+                        <!-- Background Image -->
+
+                        <div
+                            class="absolute inset-0 bg-cover bg-center bg-[url('../images/AddImage.jpeg')] scale-x-[-1]">
+                            <div class="bg-gradient-to-r from-black"></div>
+                        </div>
+                        <!-- Content -->
+                        <div class="relative">
+                            <!-- Text Content -->
+                            <div class="mb-4 pl-14 sm:mb-0">
+                                <h2 class="text-3xl font-bold leading-tight sm:text-4xl">
+                                    50% MORE REASONS TO LOVE OUR <br>
+                                    CAFE'S SPECIAL OFFER
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- Wavy Background -->
+                        <div class="absolute top-0 left-0 w-full">
+                            <img src="../images/Vector-Top.png" class="w-full" alt="Wavy Background">
+                        </div>
+                        <div class="absolute -bottom-1 left-0 w-full">
+                            <img src="../images/Vector-Bottom.png" class="w-full" alt="Wavy Background">
+                        </div>
+                        <div class="absolute top-0 -left-44">
+                            <img src="../images/Vector-Left.png" class="w-full" alt="Wavy Background">
+                        </div>
+                        <div class="absolute -top-24 -right-52">
+                            <img src="../images/Vector-Right.png" class="w-full" alt="Wavy Background">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Blog section -->
+    <section class="py-12 bg-[#f5e2d7] relative">
+        <div>
+            <div class="container mx-auto">
+                <div class="heading relative text-center lg:my-16">
+                    <div>
+                        <h2 class="text-[#7c4d3a] text-3xl lg:text-5xl font-bold pb-6 md:pb-12 otomanopee">BLOGS</h2>
+                        <img src="../images/Heading-coffee-image.png"
+                            class="absolute w-[35%] md:w-[20%] -top-7 right-[60px] sm:-top-16 sm:right-[115px] md:-top-10 md:right-[230px]  lg:-top-12 lg:right-[300px] xl:-top-24 xl:right-[480px] opacity-25	"
+                            alt="">
+                    </div>
+                </div>
+    
+                <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog Card -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="../images/blog-1.jpeg" alt="Elegant Dessert" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-gray-500 mb-2">March 17, 2023 · Ice Cream</p>
+                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Elegant Dessert: 10 Tips To Make <br> It At Home
+                            </h2>
+                            <button class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View More</button>
+                        </div>
+                    </div>
+    
+                    <!-- Blog Card -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="../images/blog-2.jpeg" alt="React Hooks" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-gray-500 mb-2">March 15, 2023 · Coffee</p>
+                            <h2 class="text-lg font-semibold text-gray-800 mb-4">SWE React Hooks With Next Incremental
+                                Static Regeneration</h2>
+                            <button class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View More</button>
+                        </div>
+                    </div>
+    
+                    <!-- Blog Card -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="../images/blog-3.jpeg" alt="Cocktails" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-gray-500 mb-2">March 17, 2023 · Ice Cream</p>
+                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Ideal Cocktails From Our Varmen For Perfect
+                                Mood</h2>
+                            <button class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6  rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="text-center mt-8">
+                    <button class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 md:mb-5 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View More</button>
+                </div>
+            </div>
+            <!-- Wavy Background -->
+            <div class="absolute top-0 left-0 w-full">
+                <img src="../images/gallery-wave-1.png" class="w-full" alt="Wavy Background">
+            </div>
+            <div class="absolute bottom-0 left-0 w-full">
+                <img src="../images/gallery-wave-2.png" class="w-full" alt="Wavy Background">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#f5e2d7] text-[#4b3c36] py-10 px-5 md:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+            <!-- Logo and Info -->
+            <div class="space-y-4">
+                <img src="../images/logo.png" alt="Logo" class="h-12">
+                <p class="inter text-[18px] text-[#737373]">
+                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Ut Ex Libero, Condimentum At Lectus.
+                </p>
+                <div class="flex space-x-3 text-xl">
+                    <a href="#" class="hover:text-[#7F5637]"><i class="fa-brands fa-facebook"></i>
+                        <a href="#" class="hover:text-[#7F5637]"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-[#7F5637]"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-[#7F5637]"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="space-y-2">
+                <h3 class="otomanopee text-[22px] font-semibold text-[#7F5637]">Business <span
+                        class="text-black">Hours</span></h3>
+                <p class="font-bold text-[#7F5637] text-[18px]">
+                    <i class="far fa-clock text-[#7F5637]"></i> Monday - Sunday<br>
+                    <span class="text-[#737373] font-semibold">2:00 – 11:30 PM</span>
+                </p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-2">
+                <h3 class="otomanopee text-[22px] font-semibold text-[#7F5637]">Contact <span
+                        class="text-[#000000]">Us</span></h3>
+                <p class="inter text-[16px] text-[#737373]">
+                    <i class="fa-solid fa-phone text-[#7F5637] pb-2 pe-2 text-[18px]"></i> <span>063587 50033 - 097265
+                        50033</span> <br>
+                    <i class="fa-solid fa-envelope text-[#7F5637] pb-2 pe-2 text-[18px]"></i>
+                    <span>Kinaara@Gmail.Com</span> <br>
+                    <i class="fa-solid fa-location-dot text-[#7F5637] pb-2 pe-2 text-[18px]"></i> <span>Behind S D Jain
+                        Modern School, Vesu Piplod Surat, Gujarat
+                        395007</span>
+                </p>
+            </div>
+
+            <!-- Instagram Feed -->
+            <div class="space-y-2">
+                <h3 class="font-bold text-[#7F5637] text-[22px] otomanopee">Follow <span
+                        class="text-[#000000]">Instagram</span></h3>
+                <div class="grid grid-cols-3 gap-2">
+                    <img src="../images/footer1.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer2.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer3.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer4.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer-5.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer6.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
 
 </body>
