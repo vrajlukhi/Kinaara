@@ -39,8 +39,10 @@
                     </div>
                     <!-- Navigation Links (Hidden on Mobile) -->
                     <div class="hidden lg:flex lg:gap-x-12">
-                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
-                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
+                        <div class="bg-[url('../images/Nav-Image.png')] w-[80px] bg-center bg-cover text-center">
+                            <a href="index.html" class="text-sm text-lg text-white z-[1] hover:font-semibold inter">HOME</a>
+                        </div>
+                        <a href="about.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
                         <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
                         <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
                         <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
@@ -78,7 +80,6 @@
                         </a>
                     </div>
                 </div>
-                <div></div>
             </div>
 
             <!-- Coffee Cup Image -->
@@ -161,7 +162,7 @@
     <section class="bg-[#f5e2d7] relative">
         <div>
             <div class="container mx-auto">
-                <div class="min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 py-10">
+                <div class="px-4 sm:px-8 md:px-16 lg:px-24 py-10">
                     <!-- Title -->
                     <div class="heading relative text-center lg:my-16">
                         <div>
@@ -232,7 +233,7 @@
                     </div>
 
                     <!-- View More Button -->
-                    <div class="text-center mt-5   md:my-32">
+                    <div class="text-center mt-5 lg:my-32">
                         <button
                             class="border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-colors">
                             View More
@@ -248,11 +249,18 @@
                 <img src="../images/gallery-wave-2.png" class="w-full" alt="Wavy Background">
             </div>
 
+            <div class="absolute hidden lg:block lg:bottom-12 lg:left-0">
+                <img src="../images/gallery-leaves.png" class="" alt="Decorative Flower">
+            </div>
+            <div class="absolute hidden lg:block lg:top-12 lg:right-0">
+                <img src="../images/gallery-leaves.png" class="scale-x-[-1]" alt="Decorative Flower">
+            </div>
+
         </div>
 
     </section>
 
-    <!-- Advataisment -->
+    <!-- offer -->
     <section class="bg-[#F0ECEB]">
         <div class="py-8">
             <div class="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
@@ -307,19 +315,22 @@
                             alt="">
                     </div>
                 </div>
-    
+
                 <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Blog Card -->
                     <div class="bg-white shadow-md rounded-lg overflow-hidden">
                         <img src="../images/blog-1.jpeg" alt="Elegant Dessert" class="w-full h-48 object-cover">
                         <div class="p-4">
                             <p class="text-sm text-gray-500 mb-2">March 17, 2023 · Ice Cream</p>
-                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Elegant Dessert: 10 Tips To Make <br> It At Home
+                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Elegant Dessert: 10 Tips To Make <br>
+                                It At Home
                             </h2>
-                            <button class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View More</button>
+                            <button
+                                class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                                More</button>
                         </div>
                     </div>
-    
+
                     <!-- Blog Card -->
                     <div class="bg-white shadow-md rounded-lg overflow-hidden">
                         <img src="../images/blog-2.jpeg" alt="React Hooks" class="w-full h-48 object-cover">
@@ -327,24 +338,31 @@
                             <p class="text-sm text-gray-500 mb-2">March 15, 2023 · Coffee</p>
                             <h2 class="text-lg font-semibold text-gray-800 mb-4">SWE React Hooks With Next Incremental
                                 Static Regeneration</h2>
-                            <button class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View More</button>
+                            <button
+                                class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                                More</button>
                         </div>
                     </div>
-    
+
                     <!-- Blog Card -->
                     <div class="bg-white shadow-md rounded-lg overflow-hidden">
                         <img src="../images/blog-3.jpeg" alt="Cocktails" class="w-full h-48 object-cover">
                         <div class="p-4">
                             <p class="text-sm text-gray-500 mb-2">March 17, 2023 · Ice Cream</p>
-                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Ideal Cocktails From Our Varmen For Perfect
+                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Ideal Cocktails From Our Varmen For
+                                Perfect
                                 Mood</h2>
-                            <button class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6  rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View More</button>
+                            <button
+                                class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6  rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                                More</button>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="text-center mt-8">
-                    <button class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 md:mb-5 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View More</button>
+                    <button
+                        class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 md:mb-5 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                        More</button>
                 </div>
             </div>
             <!-- Wavy Background -->
@@ -353,6 +371,283 @@
             </div>
             <div class="absolute bottom-0 left-0 w-full">
                 <img src="../images/gallery-wave-2.png" class="w-full" alt="Wavy Background">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu section -->
+    <section class="bg-[#F0ECEB] py-12 relative">
+        <div>
+            <div class="container mx-auto px-4">
+                <!-- Section Heading -->
+                <div class="heading relative text-center lg:my-16">
+                    <div>
+                        <h2 class="text-[#7c4d3a] text-3xl lg:text-5xl font-bold pb-6 md:pb-12 otomanopee">MENU</h2>
+                        <img src="../images/Heading-coffee-image.png"
+                            class="absolute w-[35%] md:w-[20%] -top-7 right-[60px] sm:-top-16 sm:right-[115px] md:-top-10 md:right-[230px]  lg:-top-12 lg:right-[300px] xl:-top-24 xl:right-[480px] opacity-25	"
+                            alt="">
+                    </div>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <!-- Menu Item -->
+                    <div class="flex items-start  p-4 transition relative group">
+                        <img src="../images/menu-1.jpeg" alt="Coleslaw Salad"
+                            class="w-28 h-28 object-cover bg-center mr-4 mt-3" />
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold inter text-[18px] md:text-[24px] text-[#7F5637]">Coleslaw
+                                Salad
+                            </h3>
+                            <p class="text-sm text-[#737373] inter text-[14px] md:text-[16px] my-2">
+                                Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
+                                Dressing Garnish With Marinated Paneer
+                            </p>
+                            <a href="#"
+                                class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
+                                View More ➤
+                            </a>
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute before:bottom-[px] before:-left-[10px] group-hover:before:border-l-2 group-hover:before:border-t-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute lg:before:-bottom-[140px] lg:before:left-[310px]  xl:before:-bottom-[130px] xl:before:left-[530px] group-hover:before:border-b-2 group-hover:before:border-r-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                    </div>
+                    <div class="flex items-start  p-4 transition relative group">
+                        <img src="../images/menu-2.jpeg" alt="Coleslaw Salad"
+                            class="w-28 h-28 object-cover bg-center mr-4 mt-3" />
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold inter text-[18px] md:text-[24px] text-[#7F5637]">Coleslaw
+                                Salad
+                            </h3>
+                            <p class="text-sm text-[#737373] inter text-[14px] md:text-[16px] my-2">
+                                Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
+                                Dressing Garnish With Marinated Paneer
+                            </p>
+                            <a href="#"
+                                class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
+                                View More ➤
+                            </a>
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute before:bottom-[px] before:-left-[10px] group-hover:before:border-l-2 group-hover:before:border-t-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute lg:before:-bottom-[140px] lg:before:left-[310px]  xl:before:-bottom-[130px] xl:before:left-[530px] group-hover:before:border-b-2 group-hover:before:border-r-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                    </div>
+                    <div class="flex items-start  p-4 transition relative group">
+                        <img src="../images/menu-3.jpeg" alt="Coleslaw Salad"
+                            class="w-28 h-28 object-cover bg-center mr-4 mt-3" />
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold inter text-[18px] md:text-[24px] text-[#7F5637]">Coleslaw
+                                Salad
+                            </h3>
+                            <p class="text-sm text-[#737373] inter text-[14px] md:text-[16px] my-2">
+                                Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
+                                Dressing Garnish With Marinated Paneer
+                            </p>
+                            <a href="#"
+                                class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
+                                View More ➤
+                            </a>
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute before:bottom-[px] before:-left-[10px] group-hover:before:border-l-2 group-hover:before:border-t-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute lg:before:-bottom-[140px] lg:before:left-[310px]  xl:before:-bottom-[130px] xl:before:left-[530px] group-hover:before:border-b-2 group-hover:before:border-r-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                    </div>
+                    <div class="flex items-start  p-4 transition relative group">
+                        <img src="../images/menu-4.jpeg" alt="Coleslaw Salad"
+                            class="w-28 h-28 object-cover bg-center mr-4 mt-3" />
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold inter text-[18px] md:text-[24px] text-[#7F5637]">Coleslaw
+                                Salad
+                            </h3>
+                            <p class="text-sm text-[#737373] inter text-[14px] md:text-[16px] my-2">
+                                Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
+                                Dressing Garnish With Marinated Paneer
+                            </p>
+                            <a href="#"
+                                class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
+                                View More ➤
+                            </a>
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute before:bottom-[px] before:-left-[10px] group-hover:before:border-l-2 group-hover:before:border-t-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute lg:before:-bottom-[140px] lg:before:left-[310px]  xl:before:-bottom-[130px] xl:before:left-[530px] group-hover:before:border-b-2 group-hover:before:border-r-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                    </div>
+                    <div class="flex items-start  p-4 transition relative group">
+                        <img src="../images/menu-5.jpeg" alt="Coleslaw Salad"
+                            class="w-28 h-28 object-cover bg-center mr-4 mt-3" />
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold inter text-[18px] md:text-[24px] text-[#7F5637]">Coleslaw
+                                Salad
+                            </h3>
+                            <p class="text-sm text-[#737373] inter text-[14px] md:text-[16px] my-2">
+                                Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
+                                Dressing Garnish With Marinated Paneer
+                            </p>
+                            <a href="#"
+                                class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
+                                View More ➤
+                            </a>
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute before:bottom-[px] before:-left-[10px] group-hover:before:border-l-2 group-hover:before:border-t-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute lg:before:-bottom-[140px] lg:before:left-[310px]  xl:before:-bottom-[130px] xl:before:left-[530px] group-hover:before:border-b-2 group-hover:before:border-r-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                    </div>
+                    <div class="flex items-start  p-4 transition relative group">
+                        <img src="../images/menu-6.jpeg" alt="Coleslaw Salad"
+                            class="w-28 h-28 object-cover bg-center mr-4 mt-3" />
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold inter text-[18px] md:text-[24px] text-[#7F5637]">Coleslaw
+                                Salad
+                            </h3>
+                            <p class="text-sm text-[#737373] inter text-[14px] md:text-[16px] my-2">
+                                Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
+                                Dressing Garnish With Marinated Paneer
+                            </p>
+                            <a href="#"
+                                class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
+                                View More ➤
+                            </a>
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute before:bottom-[px] before:-left-[10px] group-hover:before:border-l-2 group-hover:before:border-t-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute lg:before:-bottom-[140px] lg:before:left-[310px]  xl:before:-bottom-[130px] xl:before:left-[530px] group-hover:before:border-b-2 group-hover:before:border-r-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                    </div>
+                    <div class="flex items-start  p-4 transition relative group">
+                        <img src="../images/menu-7.jpeg" alt="Coleslaw Salad"
+                            class="w-28 h-28 object-cover bg-center mr-4 mt-3" />
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold inter text-[18px] md:text-[24px] text-[#7F5637]">Coleslaw
+                                Salad
+                            </h3>
+                            <p class="text-sm text-[#737373] inter text-[14px] md:text-[16px] my-2">
+                                Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted <br>
+                                Dressing Garnish With Marinated Paneer
+                            </p>
+                            <a href="#"
+                                class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
+                                View More ➤
+                            </a>
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute before:bottom-[px] before:-left-[10px] group-hover:before:border-l-2 group-hover:before:border-t-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute lg:before:-bottom-[140px] lg:before:left-[310px]  xl:before:-bottom-[130px] xl:before:left-[530px] group-hover:before:border-b-2 group-hover:before:border-r-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                    </div>
+                    <div class="flex items-start  p-4 transition relative group">
+                        <img src="../images/menu-8.jpeg" alt="Coleslaw Salad"
+                            class="w-28 h-28 object-cover bg-center mr-4 mt-3" />
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold inter text-[18px] md:text-[24px] text-[#7F5637]">Coleslaw
+                                Salad
+                            </h3>
+                            <p class="text-sm text-[#737373] inter text-[14px] md:text-[16px] my-2">
+                                Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted <br>
+                                Dressing Garnish With Marinated Paneer
+                            </p>
+                            <a href="#"
+                                class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
+                                View More ➤
+                            </a>
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute before:bottom-[px] before:-left-[10px] group-hover:before:border-l-2 group-hover:before:border-t-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                        <div
+                            class="absolute hidden lg:block before:content-[''] before:absolute lg:before:-bottom-[140px] lg:before:left-[310px]  xl:before:-bottom-[130px] xl:before:left-[530px] group-hover:before:border-b-2 group-hover:before:border-r-2 before:border-[#7F5637] before:px-[65px] before:py-[35px] transition">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View More Button -->
+                <div class="text-center mt-8">
+                    <button
+                        class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 md:mb-5 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                        More</button>
+                </div>
+            </div>
+
+            <div class="absolute hidden lg:block lg:top-0 lg:left-0">
+                <img src="../images/menu-pan.png" class="" alt="Decorative Flower">
+            </div>
+            <div class="absolute hidden lg:block lg:bottom-[25%] lg:right-0">
+                <img src="../images/menu-pan.png" class="scale-x-[-1] scale-y-[-1]" alt="Decorative Flower">
+            </div>
+        </div>
+    </section>
+
+    <!-- testimopnial section -->
+    <section class="bg-[#0F0F0F] text-white bg-[url('../images/Testimopnial-image.jpeg')] bg-center bg-cover relative">
+        <div class="inset-0 bg-gradient-to-r from-[#171717] via-[#171717] to-transparent rounded-lg py-32">
+            <div class="container mx-auto px-4">
+                <div class="items-center relative">
+                    <!-- Text Section -->
+                    <div class="space-y-6 ">
+                        <!-- Title -->
+                        <h2 class="md:text-[80px] text-[24px] otomanopee font-bold text-[#7F5637]">TESTIMONIALS</h2>
+
+                        <!-- Testimonial Text -->
+                        <p class="text-white md:text-[20px] text-[14px] inter leading-relaxed">
+                            The location is very apt for the evening. The food <br> choices are ample
+                            and the rate is also very decent. <br> The music played there is also
+                            nice. I personally liked <br> the Chinese food here. Also, the drinks were
+                            tasty.
+                        </p>
+
+                        <!-- Client Info -->
+                        <div>
+                            <p class="text-white font-semibold inter md:text-[22px] text-[18px]">Pinaz P</p>
+                            <p class="text-[#7F5637] inter md:text-[22px] text-[18px]">Client of Restaurant</p>
+                        </div>
+                    </div>
+                    <div class="absolute top-[10%] md:top-[25%] left-[1%]">
+                        <i class="fa-solid fa-quote-right text-6xl md:text-8xl opacity-20" style="color: #7f5637;"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Wavy Background -->
+            <div class="absolute top-0 left-0 w-full">
+                <img src="../images/gallery-wave-1.png" class="w-full" alt="Wavy Background">
+            </div>
+            <div class="absolute bottom-0 left-0 w-full">
+                <img src="../images/gallery-wave-2.png" class="w-full" alt="Wavy Background">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#64462F] relative">
+        <div>
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between px-6 pb-12 pt-20">
+                    <div>
+                      <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
+                      <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
+                    </div>
+                    <button class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING TABLE</button>
+                  </div>
+            </div>
+            <!-- Wavy Background -->
+            <div class="absolute top-0 left-0 w-full">
+                <img src="../images/Group 79.png" class="w-full scale-x-[-1]" alt="Wavy Background">
             </div>
         </div>
     </section>
