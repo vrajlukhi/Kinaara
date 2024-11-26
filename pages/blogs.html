@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header bg-[#f5e2d7]">
+        <div class="container mx-auto">
+            <header>
+                <nav class="mx-auto flex items-center justify-between ps-4 pe-4 pt-4 md:p-6 lg:px-8"
+                    aria-label="Global">
+                    <!-- Logo -->
+                    <div class="flex lg:flex-1">
+                        <a href="#" class="-m-1.5 p-1.5 ps-0">
+                            <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]"
+                                src="../images/logo.png" alt="Kinaara Logo">
+                        </a>
+                    </div>
+                    <!-- Mobile Hamburger Menu -->
+                    <div class="flex lg:hidden">
+                        <button type="button"
+                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Navigation Links (Hidden on Mobile) -->
+                    <div class="hidden lg:flex lg:gap-x-12">
+                        <a href="../index.html"
+                            class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
+                        <a href="about.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
+                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
+                        <a href="menu.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
+                        <div class="bg-[url('../images/Nav-Image.png')] w-[80px] bg-center bg-cover text-center">
+                            <a href="blogs.html"
+                                class="text-sm text-lg text-white z-[1] hover:font-semibold inter">BLOGS</a>
+                        </div>
+                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
+                    </div>
+                    <!-- Place Order Button -->
+                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <a href="#"
+                            class="text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                            PLACE ORDER
+                        </a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <!-- banner Section -->
+    <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-52">
+        <div>
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="grid grid-cols-2">
+                    <!-- Text Content -->
+                    <div class="space-y-1 md:space-y-6 text-left pt-[30%]">
+                        <div class="heading relative">
+                            <div>
+                                <h2
+                                    class="text-[#7c4d3a] text-[24px] md:text-[30px] lg:text-7xl font-bold pb-12 otomanopee">
+                                    BLOGS </h2>
+                                <img src="../images/Heading-coffee-image.png"
+                                    class="absolute w-[35%] -top-0 right-[65px] sm:-top-4 sm:right-[150px] md:-top-6 md:right-[180px]  lg:-top-2 lg:right-[150px] xl:-top-14 xl:right-[300px] opacity-25	"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Coffee Cup Image -->
+                    <div class="absolute bottom-0 right-0 md:w-[30%] lg:bottom lg:right-20 w-[50%] lg:w-[40%] ">
+                        <img src="../images/blog-banner-image.png" class="w-full" alt="Coffee Cup">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Wavy Background -->
+            <div class="absolute bottom-0 left-0 w-full">
+                <img src="../images/pseudo.svg" class="w-full" alt="Wavy Background">
+            </div>
+
+            <!-- Decorative Flower Image -->
+            <div class="absolute hidden lg:block lg:top-[-150px] lg:left-0">
+                <img src="../images/flower.png" class="" alt="Decorative Flower">
+            </div>
+
+            <!-- Decorative Coffee Bean -->
+            <div class="absolute hidden lg:block xl:top-[400px] xl:left-[-20px] transform origin-bottom -rotate-12">
+                <img src="../images/coffee.png" class="md:w-[80px] md:h-[80px] xl:w-[98px] xl:h-[98px]"
+                    alt="Coffee Bean">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F0ECEB] py-12">
+        <div class="max-w-6xl mx-auto">
+            <!-- Grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-md overflow-hidden border-b-4 border-[#7F5637]">
+                    <img src="../images/blog-1.jpeg" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between text-[#878787] text-[18px] md:text-[20px] inter mb-2">
+                            <p>March 11, 2023</p>
+                            <span>Ice Cream</span>
+                        </div>
+                        <h2 class="md:text-[25px] text-[18px] font-semibold mb-3 text-[#000000]">Elegant Dessert: 10
+                            Tips To Make It At Home</h2>
+                        <button
+                            class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">View
+                            More</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-md overflow-hidden border-b-4 border-[#7F5637]">
+                    <img src="../images/blog-2.jpeg" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between text-[#878787] text-[18px] md:text-[20px] inter mb-2">
+                            <p>March 11, 2023</p>
+                            <span>Ice Cream</span>
+                        </div>
+                        <h2 class="md:text-[25px] text-[18px] font-semibold mb-3 text-[#000000]">Elegant Dessert: 10
+                            Tips To Make It At Home</h2>
+                        <button
+                            class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">View
+                            More</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-md overflow-hidden border-b-4 border-[#7F5637]">
+                    <img src="../images/blog-1.jpeg" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between text-[#878787] text-[18px] md:text-[20px] inter mb-2">
+                            <p>March 11, 2023</p>
+                            <span>Ice Cream</span>
+                        </div>
+                        <h2 class="md:text-[25px] text-[18px] font-semibold mb-3 text-[#000000]">Elegant Dessert: 10
+                            Tips To Make It At Home</h2>
+                        <button
+                            class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">View
+                            More</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white shadow-md overflow-hidden border-b-4 border-[#7F5637]">
+                    <img src="../images/blog-4.jpeg" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between text-[#878787] text-[18px] md:text-[20px] inter mb-2">
+                            <p>March 11, 2023</p>
+                            <span>Ice Cream</span>
+                        </div>
+                        <h2 class="md:text-[25px] text-[18px] font-semibold mb-3 text-[#000000]">Elegant Dessert: 10
+                            Tips To Make It At Home</h2>
+                        <button
+                            class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">View
+                            More</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white shadow-md overflow-hidden border-b-4 border-[#7F5637]">
+                    <img src="../images/blog-5.jpeg" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between text-[#878787] text-[18px] md:text-[20px] inter mb-2">
+                            <p>March 11, 2023</p>
+                            <span>Ice Cream</span>
+                        </div>
+                        <h2 class="md:text-[25px] text-[18px] font-semibold mb-3 text-[#000000]">Elegant Dessert: 10
+                            Tips To Make It At Home</h2>
+                        <button
+                            class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">View
+                            More</button>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-white shadow-md overflow-hidden border-b-4 border-[#7F5637]">
+                    <img src="../images/blog-1.jpeg" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between text-[#878787] text-[18px] md:text-[20px] inter mb-2">
+                            <p>March 11, 2023</p>
+                            <span>Ice Cream</span>
+                        </div>
+                        <h2 class="md:text-[25px] text-[18px] font-semibold mb-3 text-[#000000]">Elegant Dessert: 10
+                            Tips To Make It At Home</h2>
+                        <button
+                            class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">View
+                            More</button>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="bg-white shadow-md overflow-hidden border-b-4 border-[#7F5637]">
+                    <img src="../images/blog-7.jpeg" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between text-[#878787] text-[18px] md:text-[20px] inter mb-2">
+                            <p>March 11, 2023</p>
+                            <span>Ice Cream</span>
+                        </div>
+                        <h2 class="md:text-[25px] text-[18px] font-semibold mb-3 text-[#000000]">Elegant Dessert: 10
+                            Tips To Make It At Home</h2>
+                        <button
+                            class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">View
+                            More</button>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="bg-white shadow-md overflow-hidden border-b-4 border-[#7F5637]">
+                    <img src="../images/blog-8.jpeg" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between text-[#878787] text-[18px] md:text-[20px] inter mb-2">
+                            <p>March 11, 2023</p>
+                            <span>Ice Cream</span>
+                        </div>
+                        <h2 class="md:text-[25px] text-[18px] font-semibold mb-3 text-[#000000]">Elegant Dessert: 10
+                            Tips To Make It At Home</h2>
+                        <button
+                            class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">View
+                            More</button>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="bg-white shadow-md overflow-hidden border-b-4 border-[#7F5637]">
+                    <img src="../images/blog-9.jpeg" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between text-[#878787] text-[18px] md:text-[20px] inter mb-2">
+                            <p>March 11, 2023</p>
+                            <span>Ice Cream</span>
+                        </div>
+                        <h2 class="md:text-[25px] text-[18px] font-semibold mb-3 text-[#000000]">Elegant Dessert: 10
+                            Tips To Make It At Home</h2>
+                        <button
+                            class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">View
+                            More</button>
+                    </div>
+                </div>
+
+
+                <!-- Repeat as needed for other cards -->
+            </div>
+            <!-- Load More button -->
+            <div class="mt-6 text-center">
+                <button
+                    class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-[15px] md:text-[18px] rounded hover:bg-[#7c4d3a] hover:text-white">Load
+                    More</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-[#64462F] relative">
+        <div>
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between px-6 pb-12 pt-20">
+                    <div>
+                        <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
+                        <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
+                    </div>
+                    <button
+                        class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING
+                        TABLE</button>
+                </div>
+            </div>
+            <!-- Wavy Background -->
+            <div class="absolute top-0 left-0 w-full">
+                <img src="../images/Group 79.png" class="w-full" alt="Wavy Background">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#f5e2d7] text-[#4b3c36] py-10 px-5 md:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+            <!-- Logo and Info -->
+            <div class="space-y-4">
+                <img src="../images/logo.png" alt="Logo" class="h-12">
+                <p class="inter text-[18px] text-[#737373]">
+                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Ut Ex Libero, Condimentum At Lectus.
+                </p>
+                <div class="flex space-x-3 text-xl">
+                    <a href="#" class="hover:text-[#7F5637]"><i class="fa-brands fa-facebook"></i>
+                        <a href="#" class="hover:text-[#7F5637]"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-[#7F5637]"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-[#7F5637]"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="space-y-2">
+                <h3 class="otomanopee text-[22px] font-semibold text-[#7F5637]">Business <span
+                        class="text-black">Hours</span></h3>
+                <p class="font-bold text-[#7F5637] text-[18px]">
+                    <i class="far fa-clock text-[#7F5637]"></i> Monday - Sunday<br>
+                    <span class="text-[#737373] font-semibold">2:00 – 11:30 PM</span>
+                </p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-2">
+                <h3 class="otomanopee text-[22px] font-semibold text-[#7F5637]">Contact <span
+                        class="text-[#000000]">Us</span></h3>
+                <p class="inter text-[16px] text-[#737373]">
+                    <i class="fa-solid fa-phone text-[#7F5637] pb-2 pe-2 text-[18px]"></i> <span>063587 50033 - 097265
+                        50033</span> <br>
+                    <i class="fa-solid fa-envelope text-[#7F5637] pb-2 pe-2 text-[18px]"></i>
+                    <span>Kinaara@Gmail.Com</span> <br>
+                    <i class="fa-solid fa-location-dot text-[#7F5637] pb-2 pe-2 text-[18px]"></i> <span>Behind S D Jain
+                        Modern School, Vesu Piplod Surat, Gujarat
+                        395007</span>
+                </p>
+            </div>
+
+            <!-- Instagram Feed -->
+            <div class="space-y-2">
+                <h3 class="font-bold text-[#7F5637] text-[22px] otomanopee">Follow <span
+                        class="text-[#000000]">Instagram</span></h3>
+                <div class="grid grid-cols-3 gap-2">
+                    <img src="../images/footer1.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer2.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer3.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer4.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer-5.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer6.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
