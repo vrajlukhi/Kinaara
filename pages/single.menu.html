@@ -95,7 +95,7 @@
     </header>
 
     <!-- banner Section -->
-    <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-52">
+    <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-52 overflow-hidden">
         <div>
             <div class="container mx-auto px-6 lg:px-8">
                 <div class="grid grid-cols-2">
@@ -113,9 +113,13 @@
                         </div>
                     </div>
                     <!-- Coffee Cup Image -->
-                    <div class="absolute bottom-0 right-0 w-[70%] md:w-[45%]">
+                    <div class="absolute bottom-0 right-0 w-[70%] md:w-[45%] md:block hidden">
                         <img src="../images/Pan-coffee-image-removebg-preview.png" class="w-full scale-x-[-1]"
                             alt="Coffee Cup">
+                    </div>
+                    <div
+                        class="absolute -bottom-10 right-0 sm:w-[30%] lg:-bottom-24 lg:right-14 w-[50%] lg:w-[30%] rotate-[-31deg] block md:hidden">
+                        <img src="../images/Gallery-banner-image.png" class="w-full" alt="Coffee Cup">
                     </div>
                 </div>
             </div>
@@ -139,143 +143,157 @@
         </div>
     </section>
 
-    <section class="bg-[#F0ECEB] py-8 px-4 md:px-8 lg:px-16">
-        <div class="container mx-auto">
-            <!-- Section Header -->
-            <div class="heading relative">
-                <div>
-                    <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">GOURMET
-                        SANDWICHES</h2>
-                    <img src="../images/Heading-coffee-image.png"
-                        class="absolute w-[25%] md:w-[15%] -top-4 right-[-20px] sm:-top-10 sm:right-[70px] md:-top-4 md:right-[110px]  lg:-top-8 lg:right-[170px] xl:-top-16 xl:right-[380px] opacity-25	"
-                        alt="">
+    <section class="bg-[#F0ECEB] py-8 px-4 md:px-8 lg:px-16 overflow-hidden relative">
+        <div>
+            <div class="container mx-auto">
+                <!-- Section Header -->
+                <div class="heading relative">
+                    <div>
+                        <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">GOURMET
+                            SANDWICHES</h2>
+                        <img src="../images/Heading-coffee-image.png"
+                            class="absolute w-[25%] md:w-[15%] -top-4 right-[-20px] sm:-top-10 sm:right-[70px] md:-top-4 md:right-[110px]  lg:-top-8 lg:right-[170px] xl:-top-16 xl:right-[380px] opacity-25	"
+                            alt="">
+                    </div>
+                </div>
+    
+                <!-- Content Wrapper -->
+                <div class="items-center lg:items-start gap-8 my-10">
+                    <!-- Left Side - Image -->
+                    <div class="relative overflow-hidden w-full h-[200px] lg:h-[400px] hidden md:block">
+                        <img src="../images/singale-menu-image.jpeg" alt="Woman with coffee"
+                            class="bg-cover bg-center w-full h-[200px] lg:h-[500px] object-cover" />
+                        <div class="absolute bottom-0 left-0 w-full z-10">
+                            <img src="../images/Group 103.png" class="w-full" alt="">
+                        </div>
+                        <div class="absolute inset-0 border-2 border-white m-1 md:m-3">
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden w-full h-[200px] lg:h-[400px] block md:hidden">
+                        <img src="../images/women with coffee.jpeg" alt="Woman with coffee"
+                            class="bg-cover bg-center w-full h-[200px] lg:h-[500px] object-cover" />
+                        <div class="absolute bottom-0 left-0 w-full z-10">
+                            <img src="../images/Group 103.png" class="w-full" alt="">
+                        </div>
+                        <div class="absolute inset-0 border-2 border-white m-1 md:m-3">
+                        </div>
+                    </div>
+    
+                    <!-- Right Side - Menu -->
+                    <div class=" space-y-6 mt-10">
+                        <!-- Menu Item -->
+                        <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                            <div class="w-full">
+                                <h4
+                                    class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
+                                    Coleslaw Salad <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 170</span></h4>
+                                <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                    Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                            </div>
+                        </div>
+    
+                        <!-- Menu Item -->
+                        <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                            <div class="w-full">
+                                <h4
+                                    class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
+                                    Nutella Grill Sandwich<span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 180</span></h4>
+                                <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                    Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                            </div>
+                        </div>
+                        <!-- Menu Item -->
+                        <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                            <div class="w-full">
+                                <h4
+                                    class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
+                                    coleslaw sandwich<span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 170</span></h4>
+                                <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                    Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                            </div>
+                        </div>
+    
+                        <!-- Menu Item -->
+                        <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                            <div class="w-full">
+                                <h4
+                                    class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
+                                    kinaara soecial club sandwich<span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span>
+                                    <span class="float-right">₹ 180</span>
+                                </h4>
+                                <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                    Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                            </div>
+                        </div>
+                        <!-- Menu Item -->
+                        <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                            <div class="w-full">
+                                <h4
+                                    class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
+                                    grilled coleslaw sandwich <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 170</span></h4>
+                                <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                    Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                            </div>
+                        </div>
+    
+                        <!-- Menu Item -->
+                        <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                            <div class="w-full">
+                                <h4 class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">cheddar shroom grill sandwich
+                                    <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 180</span>
+                                </h4>
+                                <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                    Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                            </div>
+                        </div>
+                        <!-- Menu Item -->
+                        <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                            <div class="w-full">
+                                <h4
+                                    class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
+                                    mac & cheese grill sandwich
+                                    <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 170</span>
+                                </h4>
+                                <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                    Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                            </div>
+                        </div>
+    
+                        <!-- Menu Item -->
+                        <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                            <div class="w-full">
+                                <h4
+                                    class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
+                                    grilled paneer club sandwich
+                                    <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span
+                                        class="float-right">₹ 180</span>
+                                </h4>
+                                <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                    Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                            </div>
+                        </div>
+                        <!-- Menu Item -->
+                        <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                            <div class="w-full">
+                                <h4
+                                    class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
+                                    <span>Cheddar Shroom Grill Sandwich</span>
+                                    <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span>
+                                    <span>₹ 180</span>
+                                </h4>
+                                <p class="text-sm text-[#737373] inter mt-2">
+                                    Crispy Lettuce Bellpeppers Jalapenos Tossed in Mayonnaise-based Dressing Come With
+                                    Marinated Paneer
+                                </p>
+                            </div>
+                        </div>
+    
+    
+                    </div>
                 </div>
             </div>
-
-            <!-- Content Wrapper -->
-            <div class="items-center lg:items-start gap-8 my-10">
-                <!-- Left Side - Image -->
-                <div class="relative overflow-hidden w-full h-[200px] lg:h-[400px]">
-                    <img src="../images/singale-menu-image.jpeg" alt="Woman with coffee"
-                        class="bg-cover bg-center w-full h-[200px] lg:h-[500px] object-cover" />
-                    <div class="absolute bottom-0 left-0 w-full z-10">
-                        <img src="../images/Group 103.png" class="w-full" alt="">
-                    </div>
-                    <div class="absolute inset-0 border-2 border-white m-3">
-                    </div>
-                </div>
-
-                <!-- Right Side - Menu -->
-                <div class=" space-y-6 mt-10">
-                    <!-- Menu Item -->
-                    <div class="flex items-center justify-between border-b border-gray-300 pb-4">
-                        <div class="w-full">
-                            <h4
-                                class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
-                                Coleslaw Salad <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 170</span></h4>
-                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
-                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
-                        </div>
-                    </div>
-
-                    <!-- Menu Item -->
-                    <div class="flex items-center justify-between border-b border-gray-300 pb-4">
-                        <div class="w-full">
-                            <h4
-                                class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
-                                Nutella Grill Sandwich<span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 180</span></h4>
-                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
-                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
-                        </div>
-                    </div>
-                    <!-- Menu Item -->
-                    <div class="flex items-center justify-between border-b border-gray-300 pb-4">
-                        <div class="w-full">
-                            <h4
-                                class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
-                                coleslaw sandwich<span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 170</span></h4>
-                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
-                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
-                        </div>
-                    </div>
-
-                    <!-- Menu Item -->
-                    <div class="flex items-center justify-between border-b border-gray-300 pb-4">
-                        <div class="w-full">
-                            <h4
-                                class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
-                                kinaara soecial club sandwich<span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span>
-                                <span class="float-right">₹ 180</span>
-                            </h4>
-                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
-                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
-                        </div>
-                    </div>
-                    <!-- Menu Item -->
-                    <div class="flex items-center justify-between border-b border-gray-300 pb-4">
-                        <div class="w-full">
-                            <h4
-                                class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
-                                grilled coleslaw sandwich <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 170</span></h4>
-                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
-                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
-                        </div>
-                    </div>
-
-                    <!-- Menu Item -->
-                    <div class="flex items-center justify-between border-b border-gray-300 pb-4">
-                        <div class="w-full">
-                            <h4 class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">cheddar shroom grill sandwich
-                                <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 180</span>
-                            </h4>
-                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
-                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
-                        </div>
-                    </div>
-                    <!-- Menu Item -->
-                    <div class="flex items-center justify-between border-b border-gray-300 pb-4">
-                        <div class="w-full">
-                            <h4
-                                class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
-                                mac & cheese grill sandwich
-                                <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span class="float-right">₹ 170</span>
-                            </h4>
-                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
-                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
-                        </div>
-                    </div>
-
-                    <!-- Menu Item -->
-                    <div class="flex items-center justify-between border-b border-gray-300 pb-4">
-                        <div class="w-full">
-                            <h4
-                                class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
-                                grilled paneer club sandwich
-                                <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span><span
-                                    class="float-right">₹ 180</span>
-                            </h4>
-                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
-                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
-                        </div>
-                    </div>
-                    <!-- Menu Item -->
-                    <div class="flex items-center justify-between border-b border-gray-300 pb-4">
-                        <div class="w-full">
-                            <h4
-                                class="text-lg font-semibold text-[#7F5637] otomanopee flex items-center justify-between">
-                                <span>Cheddar Shroom Grill Sandwich</span>
-                                <span class="flex-1 border-b border-dashed border-black md:mx-4 h-0"></span>
-                                <span>₹ 180</span>
-                            </h4>
-                            <p class="text-sm text-[#737373] inter mt-2">
-                                Crispy Lettuce Bellpeppers Jalapenos Tossed in Mayonnaise-based Dressing Come With
-                                Marinated Paneer
-                            </p>
-                        </div>
-                    </div>
-
-
-                </div>
+            <div class="absolute hidden lg:block -left-[15%] top-[50%] -rotate-90">
+                <h2 class="text-[50px] md:text-[70px] lg:text-[120px] otomanopee text-[#7F5637] opacity-5">sandwiches</h2>
             </div>
         </div>
     </section>

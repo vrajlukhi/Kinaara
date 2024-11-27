@@ -80,10 +80,10 @@
                             <a href="menu.html" class="block text-lg text-[#7F5637] hover:font-semibold">MENU</a>
                             <div
                                 class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center  text-center pt-1.5">
-                                <a href="blogs.html"
-                                    class="block text-lg text-white hover:font-semibold">BLOGS</a>
+                                <a href="blogs.html" class="block text-lg text-white hover:font-semibold">BLOGS</a>
                             </div>
-                            <a href="contact.html" class="block text-lg text-[#7F5637] hover:font-semibold pb-10">CONTACT</a>
+                            <a href="contact.html"
+                                class="block text-lg text-[#7F5637] hover:font-semibold pb-10">CONTACT</a>
                             <a href="#"
                                 class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 my-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
                                 PLACE ORDER
@@ -153,11 +153,15 @@
                     <!-- Main Content -->
                     <div class="grid md:grid-cols-3 gap-6">
                         <!-- Left Content (Image and Text) -->
-                        <div class="md:col-span-2 order-1 md:order-none">
+                        <div class="md:col-span-2 order-1 lg:order-none">
                             <!-- Image -->
-                            <div class="overflow-hidden  mb-6 relative">
+                            <div class="mb-6 relative">
+                                <!-- Decorative Frame -->
+                                <div
+                                    class="xl:w-[1020px] xl:h-[300px] lg:w-[680px] lg:h-[300px] md:w-[510px] md:h-[300px] sm:w-[630px] sm:h-[300px] w-[300px] h-[240px] border border-4 border-[#7F5637] absolute xl:-left-5 xl:-top-6 lg:-left-5 lg:-top-6 md:-left-5 md:-top-5 sm:-left-5 sm:-top-6 -left-4 -top-4">
+                                </div>
                                 <img src="../images/singleBlog-1.jpeg" alt="Waffle with berries"
-                                    class="w-full h-[350px] object-cover">
+                                    class="relative w-full h-[350px] object-cover z-10">
                                 <div class="absolute bottom-0 left-0 w-full z-10">
                                     <img src="../images/Group 103.png" alt="">
                                 </div>
@@ -177,7 +181,7 @@
                         </div>
 
                         <!-- Sidebar -->
-                        <div class=" p-6 order-last md:order-none">
+                        <div class=" p-6 order-last lg:order-none">
                             <div class="mb-4">
                                 <input type="text" placeholder="Search..."
                                     class="w-full p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
@@ -193,21 +197,21 @@
 
                                     <!-- Text Content -->
                                     <div>
-                                        <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
+                                        <a href="#" class="text-[#000000] text-[14px] md:text-[20px] inter">
                                             Elegant Dessert: 10 Tips To Make It At Home
                                         </a>
                                         <p class="text-[12px] md:text-[15px] text-[#878787]">March 17, 2023</p>
                                     </div>
                                 </li>
-                                <li class="flex items-start space-x-4">
+                                <li class="flex items-start space-x-4 ">
                                     <!-- Thumbnail Image -->
-                                    <div class="w-[100px] h-[70px] bg-cover">
+                                    <div class="w-[70px] h-[70px] bg-cover object-cover ">
                                         <img src="../images/single-2.jpeg" alt="Thumbnail"
                                             class="w-[100px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
                                     </div>
                                     <!-- Text Content -->
                                     <div>
-                                        <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
+                                        <a href="#" class="text-[#000000] text-[14px] md:text-[20px] inter">
                                             SWE React hooks with next increm ental static regeneration.
                                         </a>
                                         <p class="text-[12px] md:text-[15px] text-[#878787]">March 17, 2023</p>
@@ -260,7 +264,7 @@
                     </div>
                 </div>
 
-                <div class="bg-beige flex items-center justify-center p-6 order-4 md:order-none">
+                <div class="bg-beige flex items-center justify-center p-6 order-4 lg:order-none">
                     <div class=" p-8 ">
                         <!-- Title -->
                         <h1 class="text-[24px] md:text-[50px] text-[#7f5637] otomanopee mb-6">
@@ -304,7 +308,7 @@
                             </div>
 
                             <!-- Image Section -->
-                            <div class="overflow-hidden relative order-1 md:order-2">
+                            <div class="overflow-hidden relative order-1 lg:order-2">
                                 <img src="../images/singleBlog-2.jpeg" alt="Waffle with berries"
                                     class="w-full h-[350px] object-cover">
                                 <div class="absolute bottom-0 left-0 w-full z-10">
