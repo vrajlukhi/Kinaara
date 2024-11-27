@@ -13,53 +13,62 @@
 
 <body>
     <!-- Header Section -->
-    <div class="header bg-[#f5e2d7]">
+    <header class="bg-[#f5e2d7]">
         <div class="container mx-auto">
-            <header>
-                <nav class="mx-auto flex items-center justify-between ps-4 pe-4 pt-4 md:p-6 lg:px-8"
-                    aria-label="Global">
-                    <!-- Logo -->
-                    <div class="flex lg:flex-1">
-                        <a href="#" class="-m-1.5 p-1.5 ps-0">
-                            <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]"
-                                src="../images/logo.png" alt="Kinaara Logo">
-                        </a>
+            <div class="pe-4 py-3 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5 ps-0">
+                        <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]" src="../images/logo.png" alt="Kinaara Logo">
+                    </a>
+                </div>
+    
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
+                    <a href="../index.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
+                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] bg-center py-1.5 text-center">
+                        <a href="about.html" class="text-sm lg:text-lg text-white z-[1] hover:font-semibold inter">ABOUT</a>
                     </div>
-                    <!-- Mobile Hamburger Menu -->
-                    <div class="flex lg:hidden">
-                        <button type="button"
-                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                        </button>
-                    </div>
-                    <!-- Navigation Links (Hidden on Mobile) -->
-                    <div class="hidden lg:flex lg:gap-x-12">
-                        <a href="../index.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
-                        <div class="bg-[url('../images/Nav-Image.png')] w-[80px] bg-center bg-cover text-center">
-                            <a href="about.html"
-                                class="text-sm text-lg text-white z-[1] hover:font-semibold inter">ABOUT</a>
-                        </div>
-                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
-                        <a href="menu.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
-                        <a href="blogs.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
-                        <a href="contact.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
-                    </div>
-                    <!-- Place Order Button -->
-                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#"
-                            class="text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
-                            PLACE ORDER
-                        </a>
-                    </div>
+                    <a href="gallary.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
+                    <a href="menu.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
+                    <a href="blogs.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
+                    <a href="contact.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
                 </nav>
-            </header>
+    
+                <!-- Call to Action Button -->
+                <div class="md:flex hidden">
+                    <a href="#" class="text-sm otomanopee font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                        PLACE ORDER
+                    </a>
+                </div>
+    
+                <!-- Mobile Menu Toggle Button -->
+                <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()" aria-label="Toggle mobile menu">
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden h-[100vh] overflow-hidden transition-all duration-300 md:hidden bg-[#f5e2d7] border-t border-gray-200">
+                <nav class="space-y-2 py-4 px-4">
+                    <a href="../index.html" class="block text-lg text-[#7F5637] hover:font-semibold">HOME</a>
+                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center py-1.5 text-center">
+                        <a href="about.html" class="block text-lg text-white hover:font-semibold">ABOUT</a>
+                    </div>
+                    <a href="gallary.html" class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
+                    <a href="menu.html" class="block text-lg text-[#7F5637] hover:font-semibold">MENU</a>
+                    <a href="blogs.html" class="block text-lg text-[#7F5637] hover:font-semibold">BLOGS</a>
+                    <a href="contact.html" class="block text-lg text-[#7F5637] hover:font-semibold pb-10">CONTACT</a>
+                    <a href="#" class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">PLACE ORDER</a>
+                </nav>
+            </div>
         </div>
-    </div>
+    </header> 
 
     <!-- banner Section -->
     <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-52">
@@ -70,8 +79,8 @@
                     <div class="space-y-1 md:space-y-6 text-left pt-[30%]">
                         <div class="heading relative">
                             <div>
-                                <h2 class="text-[#7c4d3a] text-[24px] lg:text-7xl font-bold pb-12 otomanopee">ABOUT <span
-                                        class="text-black">US</span></h2>
+                                <h2 class="text-[#7c4d3a] text-[24px] lg:text-7xl font-bold pb-12 otomanopee">ABOUT
+                                    <span class="text-black">US</span></h2>
                                 <img src="../images/Heading-coffee-image.png"
                                     class="absolute w-[35%] -top-3 right-[30px] sm:-top-4 sm:right-[70px] md:-top-7 md:right-[120px]  lg:-top-3 lg:right-[0px] xl:-top-12 xl:right-[180px] opacity-25	"
                                     alt="">
@@ -105,14 +114,14 @@
         </div>
     </section>
 
-
     <section class="bg-[#F0ECEB] py-12 relative">
         <div>
             <div class="container mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8 px-6 lg:px-12">
                 <!-- Image Section -->
                 <div class="w-full lg:w-1/2 flex justify-center relative">
                     <!-- Decorative Frame -->
-                    <div class="xl:w-[480px] xl:h-[434px] lg:w-[300px] lg:h-[300px] md:w-[480px] md:h-[434px] sm:w-[380px] sm:h-[380px] w-[240px] h-[240px] border border-4 border-[#7F5637] absolute xl:left-20 xl:-top-6 lg:left-10 lg:-top-6 md:left-20 md:-top-6 sm:left-16 sm:-top-6 left-10 -top-4">
+                    <div
+                        class="xl:w-[480px] xl:h-[434px] lg:w-[300px] lg:h-[300px] md:w-[480px] md:h-[434px] sm:w-[380px] sm:h-[380px] w-[240px] h-[240px] border border-4 border-[#7F5637] absolute xl:left-20 xl:-top-6 lg:left-10 lg:-top-6 md:left-20 md:-top-6 sm:left-16 sm:-top-6 left-10 -top-4">
                     </div>
                     <img src="../images/About-image.jpeg" alt="Coffee and cookies"
                         class="rounded-lg max-w-[70%] h-[70%] bg-cover z-10" />
@@ -167,7 +176,7 @@
                     <!-- Image Section -->
                     <div class="relative overflow-hidden w-full h-[200px] lg:h-[400px]">
                         <img src="../images/women with coffee.jpeg" alt="Woman with coffee"
-                            class="bg-cover bg-center w-full h-[200px] lg:h-[500px]" />
+                            class="bg-cover bg-center w-full h-[200px] lg:h-[500px] object-cover" />
                         <div class="absolute bottom-0 left-0 w-full z-10">
                             <img src="../images/Group 103.png" alt="">
                         </div>
@@ -197,7 +206,6 @@
                     </div>
                 </div>
             </div>
-        </div>
 
 
         <div class="absolute hidden lg:block lg:top-[15%] lg:right-0">
@@ -220,22 +228,26 @@
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
                     <!-- Stat Item 1 -->
                     <div>
-                        <h3 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637]">125<span class="text-xl">+</span></h3>
+                        <h3 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637]">125<span
+                                class="text-xl">+</span></h3>
                         <p class="text-[#737373] text-[18px] md:text-[30px] mt-2 inter ">Branch Shop</p>
                     </div>
                     <!-- Stat Item 2 -->
                     <div>
-                        <h3 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637]">90<span class="text-xl">+</span></h3>
+                        <h3 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637]">90<span
+                                class="text-xl">+</span></h3>
                         <p class="text-[#737373] text-[18px] md:text-[30px] mt-2 inter ">Flavor Variants</p>
                     </div>
                     <!-- Stat Item 3 -->
                     <div>
-                        <h3 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637]">20<span class="text-xl">+</span></h3>
+                        <h3 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637]">20<span
+                                class="text-xl">+</span></h3>
                         <p class="text-[#737373] text-[18px] md:text-[30px] mt-2 inter ">Expert Staffs</p>
                     </div>
                     <!-- Stat Item 4 -->
                     <div>
-                        <h3 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637]">99<span class="text-xl">+</span></h3>
+                        <h3 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637]">99<span
+                                class="text-xl">+</span></h3>
                         <p class="text-[#737373] text-[18px] md:text-[30px] mt-2 inter ">Positive Review</p>
                     </div>
                 </div>
@@ -248,73 +260,74 @@
     </section>
 
     <section class="bg-[#F0ECEB] py-16 relative">
-            <div>
-                <div class="container mx-auto px-4 text-center">
-                    <!-- Heading -->
-                    <h2 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637] mb-4">
-                        "KINAARA THE CAFE GOLDEN DREAMS"
-                    </h2>
-                    <p class="text[20px] index text-[#737373]">
-                        There Are Many Variations Of Passages Of Lorem Ipsum Available, But The Majority Have Suffered
-                        Alteration In Some Form.
-                    </p>
-    
-                    <!-- Vision and Mission -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2">
-                        <!-- Vision -->
-                        <div class="text-center flex flex-col items-center">
-                            <img src="../images/vision-image.png" alt="Vision Image" class="w-[70%] h-auto" />
-    
-                        </div>
-                        <div class="text-center flex flex-col items-center justify-center">
-                            <div class="">
-                                <span class="text-[#7F5637] text-2xl mb-1 inline-block">👁️</span>
-                            </div>
-                            <h3 class="md:text-[50px] otomanopee text-[#737373] mb-2">OUR VISION</h3>
-                            <p class="text-sm md:text-[20px] text-gray-600 inter">
-                                It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A
-                                Page When Looking At Its Layout. The Point Of Using Lorem Ipsum Is That It Has A
-                                More-Or-Less Normal Distribution Of Letters, As Opposed To Using Content Here.
-                            </p>
-                        </div>
+        <div>
+            <div class="container mx-auto px-4 text-center">
+                <!-- Heading -->
+                <h2 class="text-[24px] md:text-[50px] otomanopee text-[#7F5637] mb-4">
+                    "KINAARA THE CAFE GOLDEN DREAMS"
+                </h2>
+                <p class="text[20px] index text-[#737373]">
+                    There Are Many Variations Of Passages Of Lorem Ipsum Available, But The Majority Have Suffered
+                    Alteration In Some Form.
+                </p>
+
+                <!-- Vision and Mission -->
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <!-- Vision -->
+                    <div class="text-center flex flex-col items-center">
+                        <img src="../images/vision-image.png" alt="Vision Image" class="w-[70%] h-auto" />
+
                     </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 ">
-                        <!-- Vision -->
-    
-                        <div class="text-center flex flex-col items-center justify-center order-2 md:order-1">
-                            <div class="">
-                                <span class="text-[#7f5637] text-2xl mb-1 inline-block">☕</span>
-                            </div>
-                            <h3 class="md:text-[50px] otomanopee text-[#737373] mb-2">OUR MISSION</h3>
-                            <p class="text-sm md:text-[20px] text-gray-600 inter">
-                                It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A
-                                Page When Looking At Its Layout. The Point Of Using Lorem Ipsum Is That It Has A
-                                More-Or-Less Normal Distribution Of Letters, As Opposed To Using Content Here.
-                            </p>
+                    <div class="text-center flex flex-col items-center justify-center">
+                        <div class="">
+                            <span class="text-[#7F5637] text-2xl mb-1 inline-block">👁️</span>
                         </div>
-                        <div class="text-center flex flex-col items-center order-1 md:order-2">
-                            <img src="../images/mission-image.png" alt="Vision Image" class="w-[70%] h-auto" />
-    
-                        </div>
+                        <h3 class="md:text-[50px] otomanopee text-[#737373] mb-2">OUR VISION</h3>
+                        <p class="text-sm md:text-[20px] text-gray-600 inter">
+                            It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A
+                            Page When Looking At Its Layout. The Point Of Using Lorem Ipsum Is That It Has A
+                            More-Or-Less Normal Distribution Of Letters, As Opposed To Using Content Here.
+                        </p>
                     </div>
                 </div>
-                <div class="absolute hidden lg:block lg:top-0 lg:right-0">
-                    <img src="../images/menu-pan.png" class="scale-x-[-1] " alt="Decorative Flower">
+                <div class="grid grid-cols-1 lg:grid-cols-2 ">
+                    <!-- Vision -->
+
+                    <div class="text-center flex flex-col items-center justify-center order-2 md:order-1">
+                        <div class="">
+                            <span class="text-[#7f5637] text-2xl mb-1 inline-block">☕</span>
+                        </div>
+                        <h3 class="md:text-[50px] otomanopee text-[#737373] mb-2">OUR MISSION</h3>
+                        <p class="text-sm md:text-[20px] text-gray-600 inter">
+                            It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A
+                            Page When Looking At Its Layout. The Point Of Using Lorem Ipsum Is That It Has A
+                            More-Or-Less Normal Distribution Of Letters, As Opposed To Using Content Here.
+                        </p>
+                    </div>
+                    <div class="text-center flex flex-col items-center order-1 md:order-2">
+                        <img src="../images/mission-image.png" alt="Vision Image" class="w-[70%] h-auto" />
+
+                    </div>  
                 </div>
             </div>
+            <div class="absolute hidden lg:block lg:top-0 lg:right-0">
+                <img src="../images/menu-pan.png" class="scale-x-[-1] " alt="Decorative Flower">
+            </div>
+        </div>
     </section>
-
 
     <section class="bg-[#64462F] relative">
         <div>
             <div class="container mx-auto">
                 <div class="flex items-center justify-between px-6 pb-12 pt-20">
                     <div>
-                      <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
-                      <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
+                        <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
+                        <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
                     </div>
-                    <button class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING TABLE</button>
-                  </div>
+                    <button
+                        class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING
+                        TABLE</button>
+                </div>
             </div>
             <!-- Wavy Background -->
             <div class="absolute top-0 left-0 w-full">
@@ -389,7 +402,23 @@
         </div>
     </footer>
 
-
 </body>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const toggleIconOpen = document.getElementById('menu-icon-open');
+        const toggleIconClose = document.getElementById('menu-icon-close');
+
+        menu.classList.toggle('hidden'); // Toggle visibility
+        menu.classList.toggle('max-h-0'); // For smooth opening/closing
+        menu.classList.toggle('max-h-screen'); // For smooth opening/closing
+        menu.classList.toggle('transition-transform');
+        menu.classList.toggle('duration-1000');
+        // Toggle icons
+        toggleIconOpen.classList.toggle('hidden');
+        toggleIconClose.classList.toggle('hidden');
+    }
+</script>
 
 </html>

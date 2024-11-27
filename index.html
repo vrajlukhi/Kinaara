@@ -13,52 +13,70 @@
 
 <body>
     <!-- Header Section -->
-    <div class="header bg-[#f5e2d7]">
+    <header class="bg-[#f5e2d7]">
         <div class="container mx-auto">
-            <header>
-                <nav class="mx-auto flex items-center justify-between ps-4 pe-4 pt-4 md:p-6 lg:px-8"
-                    aria-label="Global">
-                    <!-- Logo -->
-                    <div class="flex lg:flex-1">
-                        <a href="#" class="-m-1.5 p-1.5 ps-0">
-                            <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]"
-                                src="../images/logo.png" alt="Kinaara Logo">
-                        </a>
+            <div class="pe-4 py-3 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5 ps-0">
+                        <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]"
+                            src="../images/logo.png" alt="Kinaara Logo">
+                    </a>
+                </div>
+    
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
+                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center text-center py-1.5">
+                        <a href="index.html" class="text-sm lg:text-lg text-white z-[1] hover:font-semibold inter ">HOME</a>
                     </div>
-                    <!-- Mobile Hamburger Menu -->
-                    <div class="flex lg:hidden">
-                        <button type="button"
-                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                        </button>
-                    </div>
-                    <!-- Navigation Links (Hidden on Mobile) -->
-                    <div class="hidden lg:flex lg:gap-x-12">
-                        <div class="bg-[url('../images/Nav-Image.png')] w-[80px] bg-center bg-cover text-center">
-                            <a href="index.html" class="text-sm text-lg text-white z-[1] hover:font-semibold inter">HOME</a>
-                        </div>
-                        <a href="pages/about.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
-                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
-                        <a href="pages/menu.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
-                        <a href="pages/blogs.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
-                        <a href="pages/contact.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
-                    </div>
-                    <!-- Place Order Button -->
-                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#"
-                            class="text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
-                            PLACE ORDER
-                        </a>
-                    </div>
+                    <a href="pages/about.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
+                    <a href="pages/gallary.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
+                    <a href="pages/menu.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
+                    <a href="pages/blogs.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
+                    <a href="pages/contact.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
                 </nav>
-            </header>
+    
+                <!-- Call to Action Button -->
+                <div class="md:flex hidden">
+                    <a href="#"
+                        class="hidden md:block text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                        PLACE ORDER
+                    </a>
+                </div>
+    
+                <!-- Mobile Menu Toggle Button -->
+                <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden transition-transform duration-300" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden h-[100vh] overflow-hidden transition-all duration-300 md:hidden bg-[#f5e2d7] border-t border-gray-200">
+                <nav class="space-y-2 py-4 px-4">
+                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center text-center py-1.5">
+                        <a href="index.html" class="block text-lg text-white hover:font-semibold">HOME</a>
+                    </div>
+                    <a href="pages/about.html" class="block text-lg text-[#7F5637] hover:font-semibold">ABOUT</a>
+                    <a href="pages/gallary.html" class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
+                    <a href="pages/menu.html" class="block text-lg text-[#7F5637] hover:font-semibold">MENU</a>
+                    <a href="pages/blogs.html" class="block text-lg text-[#7F5637] hover:font-semibold">BLOGS</a>
+                    <a href="pages/contact.html" class="block text-lg text-[#7F5637] hover:font-semibold pb-10">CONTACT</a>
+                    <a href="#" class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">PLACE ORDER</a>
+                </nav>
+            </div>
         </div>
-    </div>
+    </header>
+    
 
     <!-- banner Section -->
     <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-80">
@@ -145,7 +163,7 @@
                                 Buds Too.</p>
                         </li>
                     </ul>
-                    <a href="#"
+                    <a href="pages/about.html"
                         class="inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white">
                         View More
                     </a>
@@ -274,7 +292,7 @@
                         <div class="relative">
                             <!-- Text Content -->
                             <div class="mb-4 pl-14 sm:mb-0">
-                                <h2 class="text-3xl font-bold leading-tight sm:text-4xl">
+                                <h2 class="text-[24px]:text-[3xl] py-5 md:py-0 font-bold leading-tight sm:text-4xl">
                                     50% MORE REASONS TO LOVE OUR <br>
                                     CAFE'S SPECIAL OFFER
                                 </h2>
@@ -322,9 +340,9 @@
                             <h2 class="text-lg font-semibold text-gray-800 mb-4">Elegant Dessert: 10 Tips To Make <br>
                                 It At Home
                             </h2>
-                            <button
+                            <a href="pages/single.blog.html"
                                 class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
-                                More</button>
+                                More</a>
                         </div>
                     </div>
 
@@ -335,9 +353,9 @@
                             <p class="text-sm text-gray-500 mb-2">March 15, 2023 · Coffee</p>
                             <h2 class="text-lg font-semibold text-gray-800 mb-4">SWE React Hooks With Next Incremental
                                 Static Regeneration</h2>
-                            <button
+                            <a href="pages/single.blog.html"
                                 class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
-                                More</button>
+                                More</a>
                         </div>
                     </div>
 
@@ -349,17 +367,17 @@
                             <h2 class="text-lg font-semibold text-gray-800 mb-4">Ideal Cocktails From Our Varmen For
                                 Perfect
                                 Mood</h2>
-                            <button
+                            <a href="pages/single.blog.html"
                                 class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6  rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
-                                More</button>
+                                More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center mt-8">
-                    <button
-                        class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 md:mb-5 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
-                        More</button>
+                <div class="text-center my-8">
+                    <a href="pages/blogs.html"
+                        class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 md:mb-5 hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                        More</a>
                 </div>
             </div>
             <!-- Wavy Background -->
@@ -400,7 +418,7 @@
                                 Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
                                 Dressing Garnish With Marinated Paneer
                             </p>
-                            <a href="#"
+                            <a href="pages/single.menu.html"
                                 class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
                                 View More ➤
                             </a>
@@ -423,7 +441,7 @@
                                 Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
                                 Dressing Garnish With Marinated Paneer
                             </p>
-                            <a href="#"
+                            <a href="pages/single.menu.html"
                                 class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
                                 View More ➤
                             </a>
@@ -446,7 +464,7 @@
                                 Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
                                 Dressing Garnish With Marinated Paneer
                             </p>
-                            <a href="#"
+                            <a href="pages/single.menu.html"
                                 class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
                                 View More ➤
                             </a>
@@ -469,7 +487,7 @@
                                 Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
                                 Dressing Garnish With Marinated Paneer
                             </p>
-                            <a href="#"
+                            <a href="pages/single.menu.html"
                                 class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
                                 View More ➤
                             </a>
@@ -492,7 +510,7 @@
                                 Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
                                 Dressing Garnish With Marinated Paneer
                             </p>
-                            <a href="#"
+                            <a href="pages/single.menu.html"
                                 class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
                                 View More ➤
                             </a>
@@ -515,7 +533,7 @@
                                 Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted
                                 Dressing Garnish With Marinated Paneer
                             </p>
-                            <a href="#"
+                            <a href="pages/single.menu.html"
                                 class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
                                 View More ➤
                             </a>
@@ -538,7 +556,7 @@
                                 Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted <br>
                                 Dressing Garnish With Marinated Paneer
                             </p>
-                            <a href="#"
+                            <a href="pages/single.menu.html"
                                 class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
                                 View More ➤
                             </a>
@@ -561,7 +579,7 @@
                                 Crispy Lettuce Bellpeppers Jalapeños Tossed in Mayonnaise/toasted <br>
                                 Dressing Garnish With Marinated Paneer
                             </p>
-                            <a href="#"
+                            <a href="pages/single.menu.html"
                                 class="text-[14px] md:text-[18px] otomanopee text-[#7F5637] font-semibold inline-block">
                                 View More ➤
                             </a>
@@ -577,9 +595,9 @@
 
                 <!-- View More Button -->
                 <div class="text-center mt-8">
-                    <button
-                        class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 md:mb-5 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
-                        More</button>
+                    <a href="pages/menu.html"
+                        class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 md:mb-5 hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                        More</a>
                 </div>
             </div>
 
@@ -717,5 +735,21 @@
 
 
 </body>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const toggleIconOpen = document.getElementById('menu-icon-open');
+        const toggleIconClose = document.getElementById('menu-icon-close');
+
+        menu.classList.toggle('hidden'); // Toggle visibility
+        menu.classList.toggle('max-h-0'); // For smooth opening/closing
+        menu.classList.toggle('max-h-screen'); // For smooth opening/closing
+        menu.classList.toggle('transition-transform');
+        menu.classList.toggle('duration-1000');
+        // Toggle icons
+        toggleIconOpen.classList.toggle('hidden');
+        toggleIconClose.classList.toggle('hidden');
+    }
+</script>
 
 </html>

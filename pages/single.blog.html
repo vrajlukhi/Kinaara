@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-[#f5e2d7]">
+        <div class="container mx-auto">
+            <div class="pe-4 py-3 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5 ps-0">
+                        <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]" src="../images/logo.png" alt="Kinaara Logo">
+                    </a>
+                </div>
+    
+                <!-- Desktop Menu -->
+                <nav aria-label="Desktop navigation" class="hidden md:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
+                    <a href="../index.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
+                    <a href="about.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
+                    <a href="gallary.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
+                    <a href="menu.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
+                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center text-center py-1.5">
+                        <a href="blogs.html" class="text-sm lg:text-lg text-white z-[1] hover:font-semibold inter">BLOGS</a>
+                    </div>
+                    <a href="contact.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
+                </nav>
+    
+                <div class="md:flex hidden">
+                    <a href="#"
+                        class="hidden md:block text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                        PLACE ORDER
+                    </a>
+                </div>
+    
+                <!-- Mobile Menu Toggle Button -->
+                <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()" aria-label="Toggle menu">
+                    <!-- Hamburger Icon -->
+                    <svg id="menu-icon-open" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <!-- Close Icon -->
+                    <svg id="menu-icon-close" class="h-6 w-6 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden h-[100vh] overflow-hidden transition-all duration-300 md:hidden bg-[#f5e2d7] border-t border-gray-200">
+                <nav aria-label="Mobile navigation" class="space-y-2 py-4 px-4">
+                    <a href="../index.html" class="block text-lg text-[#7F5637] hover:font-semibold">HOME</a>
+                    <a href="about.html" class="block text-lg text-[#7F5637] hover:font-semibold">ABOUT</a>
+                    <a href="gallary.html" class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
+                    <a href="menu.html" class="block text-lg text-[#7F5637] hover:font-semibold">MENU</a>
+                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center  text-center py-1.5">
+                        <a href="blogs.html" class="block text-lg text-white hover:font-semibold pb-10">BLOGS</a>
+                    </div>
+                    <a href="contact.html" class="block text-lg text-[#7F5637] hover:font-semibold">CONTACT</a>
+                    <a href="#" class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                        PLACE ORDER
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner Section -->
+    <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-52">
+        <div>
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="grid grid-cols-2">
+                    <!-- Text Content -->
+                    <div class="space-y-1 md:space-y-6 text-left pt-[30%]">
+                        <div class="heading relative">
+                            <div>
+                                <h2
+                                    class="text-[#7c4d3a] text-[24px] md:text-[30px] lg:text-7xl font-bold pb-12 otomanopee">
+                                    BLOGS </h2>
+                                <img src="../images/Heading-coffee-image.png"
+                                    class="absolute w-[35%] -top-0 right-[65px] sm:-top-4 sm:right-[150px] md:-top-6 md:right-[180px]  lg:-top-2 lg:right-[150px] xl:-top-14 xl:right-[300px] opacity-25	"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Coffee Cup Image -->
+                    <div class="absolute bottom-0 right-0 md:w-[30%] lg:bottom lg:right-20 w-[50%] lg:w-[40%] ">
+                        <img src="../images/blog-banner-image.png" class="w-full" alt="Coffee Cup">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Wavy Background -->
+            <div class="absolute bottom-0 left-0 w-full">
+                <img src="../images/pseudo.svg" class="w-full" alt="Wavy Background">
+            </div>
+
+            <!-- Decorative Flower Image -->
+            <div class="absolute hidden lg:block lg:top-[-150px] lg:left-0">
+                <img src="../images/flower.png" class="" alt="Decorative Flower">
+            </div>
+
+            <!-- Decorative Coffee Bean -->
+            <div class="absolute hidden lg:block xl:top-[400px] xl:left-[-20px] transform origin-bottom -rotate-12">
+                <img src="../images/coffee.png" class="md:w-[80px] md:h-[80px] xl:w-[98px] xl:h-[98px]"
+                    alt="Coffee Bean">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F0ECEB] relative">
+        <div>
+            <div class="container mx-auto">
+                <div class="px-6 py-12">
+                    <!-- Header Section -->
+                    <div class="text-center mb-10">
+                        <h1 class="text-[24px] md:text-[50px] text-[#7f5637] mb-4 otomanopee">
+                            "Taste Adventures: Exploring Flavors From Around The World"
+                        </h1>
+                    </div>
+    
+                    <!-- Main Content -->
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Left Content (Image and Text) -->
+                        <div class="md:col-span-2 order-1 md:order-none">
+                            <!-- Image -->
+                            <div class="overflow-hidden  mb-6 relative">
+                                <img src="../images/singleBlog-1.jpeg" alt="Waffle with berries"
+                                    class="w-full h-[350px] object-cover">
+                                    <div class="absolute bottom-0 left-0 w-full z-10">
+                                        <img src="../images/Group 103.png" alt="">
+                                    </div>
+                            </div>
+    
+                            <!-- Paragraphs -->
+                            <div class="space-y-4 text-[#737373] text-[14px] md:text-[20px] inter">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which don’t
+                                    look even slightly believable. If you are going to use a passage...</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour...</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority...</p>
+                            </div>
+                        </div>
+    
+                        <!-- Sidebar -->
+                        <div class=" p-6 order-last md:order-none">
+                            <div class="mb-4">
+                                <input type="text" placeholder="Search..."
+                                    class="w-full p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                            </div>
+                            <h2 class="md:text-[25px] inter text-[18px] text-[#7f5637] mb-4">Recent Posts</h2>
+                            <ul class="space-y-4">
+                                <li class="flex items-start space-x-4">
+                                    <!-- Thumbnail Image -->
+                                    <div class="w-[100px] h-[70px]  bg-cover">
+                                        <img src="../images/single-1.jpeg"
+                                        alt="Thumbnail"
+                                        class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                    </div>
+    
+                                    <!-- Text Content -->
+                                    <div>
+                                        <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
+                                            Elegant Dessert: 10 Tips To Make It At Home
+                                        </a>
+                                        <p class="text-[12px] md:text-[15px] text-[#878787]">March 17, 2023</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start space-x-4">
+                                    <!-- Thumbnail Image -->
+                                    <div class="w-[100px] h-[70px] bg-cover">
+                                        <img src="../images/single-2.jpeg"
+                                        alt="Thumbnail"
+                                        class="w-[100px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                    </div>
+                                    <!-- Text Content -->
+                                    <div>
+                                        <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
+                                            SWE React hooks with next increm ental  static regeneration.
+                                        </a>
+                                        <p class="text-[12px] md:text-[15px] text-[#878787]">March 17, 2023</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start space-x-4">
+                                    <!-- Thumbnail Image -->
+                                    <div class="w-[100px] h-[70px] object-cover bg-cover">
+                                        <img src="../images/single-3.jpeg"
+                                        alt="Thumbnail"
+                                        class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                    </div>
+                                    <!-- Text Content -->
+                                    <div>
+                                        <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
+                                            Elegant Dessert: 10 Tips To Make It At Home
+                                        </a>
+                                        <p class="text-[12px] md:text-[15px] text-[#878787]">March 17, 2023</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start space-x-4">
+                                    <!-- Thumbnail Image -->
+                                    <div class="w-[100px] h-[70px] object-cover bg-cover">
+                                        <img src="../images/single-4.jpeg"
+                                        alt="Thumbnail"
+                                        class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                    </div>
+                                    <!-- Text Content -->
+                                    <div>
+                                        <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
+                                            SWE React hooks with next increm ental  static regeneration.
+                                        </a>
+                                        <p class="text-[12px] md:text-[15px] text-[#878787]">March 17, 2023</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start space-x-4">
+                                    <!-- Thumbnail Image -->
+                                    <div class="w-[100px] h-[70px] object-cover bg-cover">
+                                        <img src="../images/single-4.jpeg"
+                                        alt="Thumbnail"
+                                        class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                    </div>
+                                    <!-- Text Content -->
+                                    <div>
+                                        <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
+                                            Ideal cockails from our varmen for pefect mood
+                                        </a>
+                                        <p class="text-[12px] md:text-[15px] text-[#878787]">March 17, 2023</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bg-beige flex items-center justify-center p-6 order-4 md:order-none">
+                    <div class=" p-8 ">
+                        <!-- Title -->
+                        <h1 class="text-[24px] md:text-[50px] text-[#7f5637] otomanopee mb-6">
+                            "THE ROASTERY REPORT: BEHIND-THE-SCENES AT KINAARA THE CAFE"
+                        </h1>
+                        <div class="space-y-4 text-[14px] md:text-[20px] text-[#737373] leading-relaxed ">
+                            <p>
+                                Contrary To Popular Belief, Lorem Ipsum Is Not Simply Random Text. It Has Roots In A
+                                Piece Of Classical Latin Literature From 45 BC, Making It Over 2000 Years Old. Richard
+                                McClintock, A Latin Professor At Hampden-Sydney College In Virginia, Looked Up One Of
+                                The More Obscure Latin Words, Consectetur, From A Lorem Ipsum Passage, And Going Through
+                                The Cites Of The Word In Classical Literature, Discovered The Undoubtable Source.
+                            </p>
+                            <p>
+                                It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content
+                                Of A Page When Looking At Its Layout. The Point Of Using Lorem Ipsum Is That It Has A
+                                More-Or-Less Normal Distribution Of Letters, As Opposed To.
+                            </p>
+                            <p>
+                                Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since.
+                            </p>
+                            <p>
+                                Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since.
+                            </p>
+                        </div>
+                        <!-- Content -->
+                        <div class="grid md:grid-cols-2 gap-8 items-start">
+                            <!-- Text Content -->
+                            <div class="space-y-4 text-[14px] md:text-[20px] text-[#737373] pt-5 leading-relaxed">
+                                <p>
+                                    a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                </p>
+                                <p>
+                                    On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to thos
+                                </p>
+                            </div>
+    
+                            <!-- Image Section -->
+                            <div class="overflow-hidden relative order-1 md:order-2">
+                                <img src="../images/singleBlog-2.jpeg" alt="Waffle with berries"
+                                    class="w-full h-[350px] object-cover">
+                                    <div class="absolute bottom-0 left-0 w-full z-10">
+                                        <img src="../images/blog-Vector (1).png"  alt="">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute hidden lg:block lg:top-[15%] lg:right-0">
+                <img src="../images/menu-pan.png" class="scale-x-[-1] scale-y-[-1]" alt="Decorative Flower">
+            </div>
+            <div class="absolute hidden lg:block -left-[155px] lg:bottom-[25%]">
+                <img src="../images/Heading-coffee-image.png" class="w-[20%] " alt="Decorative Flower">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#64462F] relative">
+        <div>
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between px-6 pb-12 pt-20">
+                    <div>
+                        <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
+                        <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
+                    </div>
+                    <button
+                        class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING
+                        TABLE</button>
+                </div>
+            </div>
+            <!-- Wavy Background -->
+            <div class="absolute top-0 left-0 w-full">
+                <img src="../images/Group 79.png" class="w-full" alt="Wavy Background">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#f5e2d7] text-[#4b3c36] py-10 px-5 md:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+            <!-- Logo and Info -->
+            <div class="space-y-4">
+                <img src="../images/logo.png" alt="Logo" class="h-12">
+                <p class="inter text-[18px] text-[#737373]">
+                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Ut Ex Libero, Condimentum At Lectus.
+                </p>
+                <div class="flex space-x-3 text-xl">
+                    <a href="#" class="hover:text-[#7F5637]"><i class="fa-brands fa-facebook"></i>
+                        <a href="#" class="hover:text-[#7F5637]"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-[#7F5637]"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-[#7F5637]"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="space-y-2">
+                <h3 class="otomanopee text-[22px] font-semibold text-[#7F5637]">Business <span
+                        class="text-black">Hours</span></h3>
+                <p class="font-bold text-[#7F5637] text-[18px]">
+                    <i class="far fa-clock text-[#7F5637]"></i> Monday - Sunday<br>
+                    <span class="text-[#737373] font-semibold">2:00 – 11:30 PM</span>
+                </p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-2">
+                <h3 class="otomanopee text-[22px] font-semibold text-[#7F5637]">Contact <span
+                        class="text-[#000000]">Us</span></h3>
+                <p class="inter text-[16px] text-[#737373]">
+                    <i class="fa-solid fa-phone text-[#7F5637] pb-2 pe-2 text-[18px]"></i> <span>063587 50033 - 097265
+                        50033</span> <br>
+                    <i class="fa-solid fa-envelope text-[#7F5637] pb-2 pe-2 text-[18px]"></i>
+                    <span>Kinaara@Gmail.Com</span> <br>
+                    <i class="fa-solid fa-location-dot text-[#7F5637] pb-2 pe-2 text-[18px]"></i> <span>Behind S D Jain
+                        Modern School, Vesu Piplod Surat, Gujarat
+                        395007</span>
+                </p>
+            </div>
+
+            <!-- Instagram Feed -->
+            <div class="space-y-2">
+                <h3 class="font-bold text-[#7F5637] text-[22px] otomanopee">Follow <span
+                        class="text-[#000000]">Instagram</span></h3>
+                <div class="grid grid-cols-3 gap-2">
+                    <img src="../images/footer1.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer2.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer3.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer4.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer-5.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                    <img src="../images/footer6.jpeg" alt="Post"
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const toggleIconOpen = document.getElementById('menu-icon-open');
+        const toggleIconClose = document.getElementById('menu-icon-close');
+
+        menu.classList.toggle('hidden'); // Toggle visibility
+        menu.classList.toggle('max-h-0'); // For smooth opening/closing
+        menu.classList.toggle('max-h-screen'); // For smooth opening/closing
+        menu.classList.toggle('transition-transform');
+        menu.classList.toggle('duration-1000');
+        // Toggle icons
+        toggleIconOpen.classList.toggle('hidden');
+        toggleIconClose.classList.toggle('hidden');
+    }
+</script>
+
+</html>

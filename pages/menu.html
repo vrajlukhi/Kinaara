@@ -13,53 +13,62 @@
 
 <body>
     <!-- Header Section -->
-    <div class="header bg-[#f5e2d7]">
+    <header class="bg-[#f5e2d7]">
         <div class="container mx-auto">
-            <header>
-                <nav class="mx-auto flex items-center justify-between ps-4 pe-4 pt-4 md:p-6 lg:px-8"
-                    aria-label="Global">
-                    <!-- Logo -->
-                    <div class="flex lg:flex-1">
-                        <a href="#" class="-m-1.5 p-1.5 ps-0">
-                            <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]"
-                                src="../images/logo.png" alt="Kinaara Logo">
-                        </a>
+            <div class="pe-4 py-3 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5 ps-0">
+                        <img class="lg:w-[100px] lg:h-[100px] w-[40px] h-[40px]" src="../images/logo.png" alt="Kinaara Logo">
+                    </a>
+                </div>
+    
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6" aria-label="Main navigation">
+                    <a href="../index.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
+                    <a href="about.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
+                    <a href="gallary.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
+                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] bg-center text-center py-1.5">
+                        <a href="menu.html" class="text-sm lg:text-lg text-white z-[1] hover:font-semibold inter">MENU</a>
                     </div>
-                    <!-- Mobile Hamburger Menu -->
-                    <div class="flex lg:hidden">
-                        <button type="button"
-                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                        </button>
-                    </div>
-                    <!-- Navigation Links (Hidden on Mobile) -->
-                    <div class="hidden lg:flex lg:gap-x-12">
-                        <a href="../index.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
-                        <a href="about.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
-                        <a href="#" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
-                        <div class="bg-[url('../images/Nav-Image.png')] w-[80px] bg-center bg-cover text-center">
-                            <a href="about.html"
-                                class="text-sm text-lg text-white z-[1] hover:font-semibold inter">MENU</a>
-                        </div>
-                        <a href="blogs.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
-                        <a href="contact.html" class="text-sm text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
-                    </div>
-                    <!-- Place Order Button -->
-                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#"
-                            class="text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
-                            PLACE ORDER
-                        </a>
-                    </div>
+                    <a href="blogs.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
+                    <a href="contact.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
                 </nav>
-            </header>
+    
+                <!-- Call to Action Button -->
+                <div class="lg:flex hidden">
+                    <a href="#" class="hidden lg:block text-sm otomanopee font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                        PLACE ORDER
+                    </a>
+                </div>
+    
+                <!-- Mobile Menu Toggle Button -->
+                <button class="lg:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()" aria-label="Toggle mobile menu">
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden h-[100vh] overflow-hidden transition-all duration-300 lg:hidden bg-[#f5e2d7] border-t-2 border-gray-200">
+                <nav class="space-y-2 py-4 px-4" aria-label="Mobile navigation">
+                    <a href="../index.html" class="block text-lg text-[#7F5637] hover:font-semibold">HOME</a>
+                    <a href="about.html" class="block text-lg text-[#7F5637] hover:font-semibold">ABOUT</a>
+                    <a href="gallary.html" class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
+                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center py-1.5 text-center">
+                        <a href="menu.html" class="block text-lg text-white hover:font-semibold">MENU</a>
+                    </div>
+                    <a href="blogs.html" class="block text-lg text-[#7F5637] hover:font-semibold">BLOGS</a>
+                    <a href="contact.html" class="block text-lg text-[#7F5637] hover:font-semibold pb-10">CONTACT</a>
+                    <a href="#" class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">PLACE ORDER</a>
+                </nav>
+            </div>
         </div>
-    </div>
+    </header>
 
     <!-- banner Section -->
     <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-52">
@@ -106,16 +115,414 @@
         </div>
     </section>
 
+    <section class="bg-[#F0ECEB] py-12 overflow-hidden relative">
+        <div>
+            <div class="container mx-auto px-4 z-10">
+                <!-- Section Title -->
+                <div class="heading relative">
+                    <div>
+                        <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">GOURMET
+                            SANDWICHES</h2>
+                        <img src="../images/Heading-coffee-image.png"
+                            class="absolute w-[25%] md:w-[15%] -top-4 right-[-20px] sm:-top-10 sm:right-[70px] md:-top-4 md:right-[110px]  lg:-top-8 lg:right-[170px] xl:-top-16 xl:right-[380px] opacity-25	"
+                            alt="">
+                    </div>
+                </div>
+    
+    
+                <!-- Sandwiches Content -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative">
+                    <!-- Image Section -->
+                    <div class="flex space-x-4 justify-center lg:justify-between z-10">
+                        <div class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[225px] md:h-[475px] relative">
+                            <img src="../images/1.jpeg" alt="Sandwich 1"
+                                class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[225px] md:h-[475px]">
+                            <div class="absolute bottom-0 left-0 w-full">
+                                <img src="../images/Vector (1.png" alt="">
+                            </div>
+                            <div class="absolute top-0 left-0 w-full">
+                                <img src="../images/Vector (2).png" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[200px] md:h-[425px] relative translate-y-6 md:translate-y-12">
+                            <img src="../images/2.jpeg" alt="Sandwich 2"
+                                class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[200px] md:h-[425px] ">
+                            <div class="absolute bottom-0 left-0 w-full">
+                                <img src="../images/Vector (1.png" alt="">
+                            </div>
+                            <div class="absolute top-0 left-0 w-full">
+                                <img src="../images/Vector (2).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute hidden lg:block bottom-[60px] left-[-130px] xl:bottom-2 xl:left-[-180px]">
+                        <img src="../images/Menu-pan-image.png" class="w-[75%]" alt="Decorative Flower">
+                    </div>
+                    <!-- Details Section -->
+                    <div class="space-y-4">
+                        <!-- Sandwich Item -->
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">Coleslaw Salad <span
+                                    class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _ _</span> <span
+                                    class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                    _ _ _ _</span> <span class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">Nutella Grill Sandwich  <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ </span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span> <span
+                                    class="float-right">₹ 180</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">Coleslaw Sandwich  <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ </span> <span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">Coleslaw Salad  <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <!-- View More Button -->
+                        <div class="">
+                            <a href="single.menu.html"
+                                class="text-sm font-normal otomanopee border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 hover:bg-[#7c4d3a] hover:text-white transition-all">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="heading relative">
+                    <div>
+                        <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">ASIAN &
+                            ORIENTAL</h2>
+                        <img src="../images/Heading-coffee-image.png"
+                            class="absolute w-[25%] md:w-[15%] -top-2 right-[10px] sm:-top-10 sm:right-[90px] md:-top-4 md:right-[180px]  lg:-top-8 lg:right-[230px] xl:-top-16 xl:right-[430px] opacity-25	"
+                            alt="">
+                    </div>
+                </div>
+    
+    
+                <!-- Sandwiches Content -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative ">
+    
+                    <!-- Details Section -->
+                    <div class="space-y-4 order-2 lg:order-1">
+                        <!-- Sandwich Item -->
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">Schezwan Noodles <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">fried rice <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span><span
+                                    class="float-right">₹ 180</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">burnt grill rice <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">Schezwan rice <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <!-- View More Button -->
+                        <div class="">
+                            <a href="single.menu.html"
+                                class="text-sm font-normal otomanopee border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 hover:bg-[#7c4d3a] hover:text-white transition-all">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Image Section -->
+                    <div class="flex space-x-4 justify-center lg:justify-between order-1 lg:order-2 z-10">
+                        <div class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[225px] md:h-[475px] relative">
+                            <img src="../images/3.jpeg" alt="Sandwich 1"
+                                class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[225px] md:h-[475px]">
+                            <div class="absolute bottom-0 left-0 w-full">
+                                <img src="../images/Vector (1.png" alt="">
+                            </div>
+                            <div class="absolute top-0 left-0 w-full">
+                                <img src="../images/Vector (2).png" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[200px] md:h-[425px] relative translate-y-6 md:translate-y-12">
+                            <img src="../images/4.jpeg" alt="Sandwich 2"
+                                class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[200px] md:h-[425px] ">
+                            <div class="absolute bottom-0 left-0 w-full">
+                                <img src="../images/Vector (1.png" alt="">
+                            </div>
+                            <div class="absolute top-0 left-0 w-full">
+                                <img src="../images/Vector (2).png" alt="">
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="absolute hidden lg:block bottom-[60px] right-[-130px] xl:bottom-2 xl:right-[-300px]">
+                        <img src="../images/Menu-pan-image.png" class="w-[75%] scale-x-[-1]" alt="Decorative Flower">
+                    </div>
+    
+                    
+                </div>
+                <div class="heading relative">
+                    <div>
+                        <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">pasta &
+                            santeed veggies</h2>
+                        <img src="../images/Heading-coffee-image.png"
+                            class="absolute w-[25%] md:w-[15%] -top-2 right-[-25px] sm:-top-10 sm:right-[60px] md:-top-5 md:right-[140px]  lg:-top-8 lg:right-[170px] xl:-top-16 xl:right-[380px] opacity-25	"
+                            alt="">
+                    </div>
+                </div>
+    
+    
+    
+                <!-- Sandwiches Content -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative">
+                    <!-- Image Section -->
+                    <div class="flex space-x-4 justify-center lg:justify-between z-10">
+                        <div class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[225px] md:h-[475px] relative">
+                            <img src="../images/5.jpeg" alt="Sandwich 1"
+                                class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[225px] md:h-[475px]">
+                            <div class="absolute bottom-0 left-0 w-full">
+                                <img src="../images/Vector (1.png" alt="">
+                            </div>
+                            <div class="absolute top-0 left-0 w-full">
+                                <img src="../images/Vector (2).png" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[200px] md:h-[425px] relative translate-y-6 md:translate-y-12">
+                            <img src="../images/6.jpeg" alt="Sandwich 2"
+                                class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[200px] md:h-[425px] ">
+                            <div class="absolute bottom-0 left-0 w-full">
+                                <img src="../images/Vector (1.png" alt="">
+                            </div>
+                            <div class="absolute top-0 left-0 w-full">
+                                <img src="../images/Vector (2).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Details Section -->
+                    <div class="space-y-4">
+                        <!-- Sandwich Item -->
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">veggies saute <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">mushroom saute <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ _</span><span
+                                    class="float-right">₹ 180</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">paneer saute <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">pasta aglio olio <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <!-- View More Button -->
+                        <div class="">
+                            <a href="single.menu.html"
+                                class="text-sm font-normal otomanopee border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 hover:bg-[#7c4d3a] hover:text-white transition-all">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="absolute hidden lg:block bottom-[60px] left-[-130px] xl:bottom-2 xl:left-[-180px]">
+                        <img src="../images/Menu-pan-image.png" class="w-[75%]" alt="Decorative Flower">
+                    </div>
+                    
+                </div>
+    
+                <div class="heading relative">
+                    <div>
+                        <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">cafe
+                            special pizza</h2>
+                        <img src="../images/Heading-coffee-image.png"
+                            class="absolute w-[25%] md:w-[15%] -top-2 right-[15px] sm:-top-8 sm:right-[150px] md:-top-4 md:right-[180px]  lg:-top-8 lg:right-[230px] xl:-top-16 xl:right-[430px] opacity-25	"
+                            alt="">
+                    </div>
+                </div>
+    
+    
+                <!-- Sandwiches Content -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative">
+    
+                    <!-- Details Section -->
+                    <div class="space-y-4 order-2 lg:order-1">
+                        <!-- Sandwich Item -->
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">pesto chilly pizza <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ </span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">garlic aioli mushroom pizza <span
+                                class="inline-block md:hidden">_ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span><span
+                                    class="float-right">₹ 180</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">tandoori paneer pizza <span
+                                class="inline-block md:hidden">_ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <div class="border-b pb-4">
+                            <h3 class="text-lg font-bold otomanopee text-[#7f5637]">spanish caravan <span
+                                class="inline-block md:hidden">_ _ _ _ _ _ _ _ _ _</span> <span
+                                class="md:inline-block hidden">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                                _ _ _</span><span
+                                    class="float-right">₹ 230</span></h3>
+                            <p class="text-sm text-[#737373] inter">Crispy Lettuce Bellpeppers Jalapenos Tossed in
+                                Mayonnaise-based Dressing Come With Marinated Paneer</p>
+                        </div>
+    
+                        <!-- View More Button -->
+                        <div class="">
+                            <a href="single.menu.html"
+                                class="text-sm font-normal otomanopee border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 hover:bg-[#7c4d3a] hover:text-white transition-all">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Image Section -->
+                    <div class="flex space-x-4 justify-center lg:justify-between order-1 lg:order-2 z-10">
+                        <div class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[225px] md:h-[475px] relative">
+                            <img src="../images/7.jpeg" alt="Sandwich 1"
+                                class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[225px] md:h-[475px]">
+                            <div class="absolute bottom-0 left-0 w-full">
+                                <img src="../images/Vector (1.png" alt="">
+                            </div>
+                            <div class="absolute top-0 left-0 w-full">
+                                <img src="../images/Vector (2).png" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[200px] md:h-[425px] relative translate-y-6 md:translate-y-12">
+                            <img src="../images/8.jpeg" alt="Sandwich 2"
+                                class="w-[150px] md:w-[200px] lg:w-[250px] xl:w-[350px] h-[200px] md:h-[425px] ">
+                            <div class="absolute bottom-0 left-0 w-full">
+                                <img src="../images/Vector (1.png" alt="">
+                            </div>
+                            <div class="absolute top-0 left-0 w-full">
+                                <img src="../images/Vector (2).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute hidden lg:block bottom-[60px] right-[-130px] xl:bottom-2 xl:right-[-300px]">
+                        <img src="../images/Menu-pan-image.png" class="w-[75%] scale-x-[-1]" alt="Decorative Flower">
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="absolute hidden md:block right-0 top-[3%]">
+                <h2 class="text-[70px] md:text-[160px] otomanopee text-[#7F5637] opacity-5">sandwiches</h2>
+            </div>
+            <div class="absolute hidden md:block left-0 top-[27%]">
+                <h2 class="text-[70px] md:text-[160px] otomanopee text-[#7F5637] opacity-5">ASIAN & ORIENTAL</h2>
+            </div>
+            <div class="absolute hidden md:block right-[-10%] top-[50%]">
+                <h2 class="text-[70px] md:text-[160px] otomanopee text-[#7F5637] opacity-5">pasta & santeed</h2>
+            </div>
+            <div class="absolute hidden md:block left-0 top-[75%]">
+                <h2 class="text-[70px] md:text-[160px] otomanopee text-[#7F5637] opacity-5">ASIAN & ORIENTAL</h2>
+            </div>
+        </div>
+    </section>
+
     <section class="bg-[#64462F] relative">
         <div>
             <div class="container mx-auto">
                 <div class="flex items-center justify-between px-6 pb-12 pt-20">
                     <div>
-                      <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
-                      <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
+                        <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
+                        <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
                     </div>
-                    <button class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING TABLE</button>
-                  </div>
+                    <button
+                        class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING
+                        TABLE</button>
+                </div>
             </div>
             <!-- Wavy Background -->
             <div class="absolute top-0 left-0 w-full">
@@ -192,5 +599,21 @@
 
 
 </body>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const toggleIconOpen = document.getElementById('menu-icon-open');
+        const toggleIconClose = document.getElementById('menu-icon-close');
+
+        menu.classList.toggle('hidden'); // Toggle visibility
+        menu.classList.toggle('max-h-0'); // For smooth opening/closing
+        menu.classList.toggle('max-h-screen'); // For smooth opening/closing
+        menu.classList.toggle('transition-transform');
+        menu.classList.toggle('duration-1000');
+        // Toggle icons
+        toggleIconOpen.classList.toggle('hidden');
+        toggleIconClose.classList.toggle('hidden');
+    }
+</script>
 
 </html>
