@@ -15,57 +15,81 @@
     <!-- Header Section -->
     <header class="bg-[#f5e2d7]">
         <div class="container mx-auto">
-            <div class="pe-4 py-3 flex items-center justify-between">
+            <div class="px-4 py-6 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1.5 p-1.5 ps-0">
-                        <img class="lg:w-[100px] lg:h-[100px] w-[40px] h-[40px]" src="../images/logo.png" alt="Kinaara Logo">
+                        <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]"
+                            src="../images/logo.png" alt="Kinaara Logo" />
                     </a>
                 </div>
-    
+
                 <!-- Desktop Menu -->
-                <nav class="hidden lg:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6" aria-label="Main navigation">
+                <nav class="hidden md:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
                     <a href="../index.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
                     <a href="about.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
-                    <a href="gallary.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
+                    <a href="gallary.html"
+                        class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
                     <div class="bg-[url('../images/Nav-Image.png')] w-[80px] bg-center text-center py-1.5">
-                        <a href="menu.html" class="text-sm lg:text-lg text-white z-[1] hover:font-semibold inter">MENU</a>
+                        <a href="menu.html"
+                            class="text-sm lg:text-lg text-white z-[1] hover:font-semibold inter">MENU</a>
                     </div>
                     <a href="blogs.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
-                    <a href="contact.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
+                    <a href="contact.html"
+                        class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
                 </nav>
-    
+
                 <!-- Call to Action Button -->
-                <div class="lg:flex hidden">
-                    <a href="#" class="hidden lg:block text-sm otomanopee font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                <div class="hidden md:flex">
+                    <a href="#"
+                        class="text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
                         PLACE ORDER
                     </a>
                 </div>
-    
+
                 <!-- Mobile Menu Toggle Button -->
-                <button class="lg:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()" aria-label="Toggle mobile menu">
-                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+                    <!-- Hamburger Icon -->
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
-                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    <!-- Close Icon -->
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
-    
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden h-[100vh] overflow-hidden transition-all duration-300 lg:hidden bg-[#f5e2d7] border-t-2 border-gray-200">
-                <nav class="space-y-2 py-4 px-4" aria-label="Mobile navigation">
-                    <a href="../index.html" class="block text-lg text-[#7F5637] hover:font-semibold">HOME</a>
-                    <a href="about.html" class="block text-lg text-[#7F5637] hover:font-semibold">ABOUT</a>
-                    <a href="gallary.html" class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
-                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center py-1.5 text-center">
-                        <a href="menu.html" class="block text-lg text-white hover:font-semibold">MENU</a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed w-full h-full bg-[#f5e2d7] -mt-6 text-white transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+            <div class="overflow-hidden">
+                <div class="text-white font-sans bg-opacity-70">
+                    <div class="relative z-10 container px-6">
+                        <nav class="space-y-6 py-4 px-4">
+                            <a href="../index.html" class="block text-lg text-[#7F5637] hover:font-semibold">HOME</a>
+                            <a href="about.html" class="block text-lg text-[#7F5637] hover:font-semibold">ABOUT</a>
+                            <a href="gallary.html" class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
+                            <div
+                                class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center py-1.5 text-center">
+                                <a href="menu.html" class="block text-lg text-white hover:font-semibold">MENU</a>
+                            </div>
+                            <a href="blogs.html" class="block text-lg text-[#7F5637] hover:font-semibold">BLOGS</a>
+                            <a href="contact.html"
+                                class="block text-lg text-[#7F5637] hover:font-semibold pb-10">CONTACT</a>
+                            <a href="#"
+                                class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">PLACE
+                                ORDER</a>
+                        </nav>
                     </div>
-                    <a href="blogs.html" class="block text-lg text-[#7F5637] hover:font-semibold">BLOGS</a>
-                    <a href="contact.html" class="block text-lg text-[#7F5637] hover:font-semibold pb-10">CONTACT</a>
-                    <a href="#" class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">PLACE ORDER</a>
-                </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -347,17 +371,25 @@
 <script>
     function toggleMenu() {
         const menu = document.getElementById('mobile-menu');
-        const toggleIconOpen = document.getElementById('menu-icon-open');
-        const toggleIconClose = document.getElementById('menu-icon-close');
+        const menuOpenIcon = document.getElementById('menu-icon-open');
+        const menuCloseIcon = document.getElementById('menu-icon-close');
+        const body = document.body;
 
-        menu.classList.toggle('hidden'); // Toggle visibility
-        menu.classList.toggle('max-h-0'); // For smooth opening/closing
-        menu.classList.toggle('max-h-screen'); // For smooth opening/closing
-        menu.classList.toggle('transition-transform');
-        menu.classList.toggle('duration-1000');
-        // Toggle icons
-        toggleIconOpen.classList.toggle('hidden');
-        toggleIconClose.classList.toggle('hidden');
+        if (menu.classList.contains('-translate-x-full')) {
+            // Open menu
+            menu.classList.remove('-translate-x-full');
+            menu.classList.add('translate-x-0');
+            menuOpenIcon.classList.add('hidden');
+            menuCloseIcon.classList.remove('hidden');
+            body.style.overflow = 'hidden'; // Prevent scrolling
+        } else {
+            // Close menu
+            menu.classList.add('-translate-x-full');
+            menu.classList.remove('translate-x-0');
+            menuOpenIcon.classList.remove('hidden');
+            menuCloseIcon.classList.add('hidden');
+            body.style.overflow = ''; // Restore scrolling
+        }
     }
 </script>
 

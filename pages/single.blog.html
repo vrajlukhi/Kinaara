@@ -15,61 +15,82 @@
     <!-- Header Section -->
     <header class="bg-[#f5e2d7]">
         <div class="container mx-auto">
-            <div class="pe-4 py-3 flex items-center justify-between">
+            <div class="px-4 py-6 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1.5 p-1.5 ps-0">
-                        <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]" src="../images/logo.png" alt="Kinaara Logo">
+                        <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]"
+                            src="../images/logo.png" alt="Kinaara Logo" />
                     </a>
                 </div>
-    
+
                 <!-- Desktop Menu -->
-                <nav aria-label="Desktop navigation" class="hidden md:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
+                <nav class="hidden md:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
                     <a href="../index.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
                     <a href="about.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
-                    <a href="gallary.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
+                    <a href="gallary.html"
+                        class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
                     <a href="menu.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
                     <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center text-center py-1.5">
-                        <a href="blogs.html" class="text-sm lg:text-lg text-white z-[1] hover:font-semibold inter">BLOGS</a>
+                        <a href="blogs.html"
+                            class="text-sm lg:text-lg text-white z-[1] hover:font-semibold inter">BLOGS</a>
                     </div>
-                    <a href="contact.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
+                    <a href="contact.html"
+                        class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
                 </nav>
-    
-                <div class="md:flex hidden">
+
+                <!-- Call to Action Button -->
+                <div class="hidden md:flex">
                     <a href="#"
-                        class="hidden md:block text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                        class="text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
                         PLACE ORDER
                     </a>
                 </div>
-    
+
                 <!-- Mobile Menu Toggle Button -->
-                <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()" aria-label="Toggle menu">
+                <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
                     <!-- Hamburger Icon -->
-                    <svg id="menu-icon-open" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                     <!-- Close Icon -->
-                    <svg id="menu-icon-close" class="h-6 w-6 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
-    
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden h-[100vh] overflow-hidden transition-all duration-300 md:hidden bg-[#f5e2d7] border-t border-gray-200">
-                <nav aria-label="Mobile navigation" class="space-y-2 py-4 px-4">
-                    <a href="../index.html" class="block text-lg text-[#7F5637] hover:font-semibold">HOME</a>
-                    <a href="about.html" class="block text-lg text-[#7F5637] hover:font-semibold">ABOUT</a>
-                    <a href="gallary.html" class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
-                    <a href="menu.html" class="block text-lg text-[#7F5637] hover:font-semibold">MENU</a>
-                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center  text-center py-1.5">
-                        <a href="blogs.html" class="block text-lg text-white hover:font-semibold pb-10">BLOGS</a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed w-full h-full bg-[#f5e2d7] -mt-6 text-white transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+            <div class="overflow-hidden">
+                <div class="text-white font-sans bg-opacity-70">
+                    <div class="relative z-10 container px-6">
+                        <nav class="space-y-6 py-4 px-4">
+                            <a href="../index.html" class="block text-lg text-[#7F5637] hover:font-semibold">HOME</a>
+                            <a href="about.html" class="block text-lg text-[#7F5637] hover:font-semibold">ABOUT</a>
+                            <a href="gallary.html" class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
+                            <a href="menu.html" class="block text-lg text-[#7F5637] hover:font-semibold">MENU</a>
+                            <div
+                                class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center  text-center pt-1.5">
+                                <a href="blogs.html"
+                                    class="block text-lg text-white hover:font-semibold">BLOGS</a>
+                            </div>
+                            <a href="contact.html" class="block text-lg text-[#7F5637] hover:font-semibold pb-10">CONTACT</a>
+                            <a href="#"
+                                class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 my-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                                PLACE ORDER
+                            </a>
+                        </nav>
                     </div>
-                    <a href="contact.html" class="block text-lg text-[#7F5637] hover:font-semibold">CONTACT</a>
-                    <a href="#" class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
-                        PLACE ORDER
-                    </a>
-                </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -128,7 +149,7 @@
                             "Taste Adventures: Exploring Flavors From Around The World"
                         </h1>
                     </div>
-    
+
                     <!-- Main Content -->
                     <div class="grid md:grid-cols-3 gap-6">
                         <!-- Left Content (Image and Text) -->
@@ -137,22 +158,24 @@
                             <div class="overflow-hidden  mb-6 relative">
                                 <img src="../images/singleBlog-1.jpeg" alt="Waffle with berries"
                                     class="w-full h-[350px] object-cover">
-                                    <div class="absolute bottom-0 left-0 w-full z-10">
-                                        <img src="../images/Group 103.png" alt="">
-                                    </div>
+                                <div class="absolute bottom-0 left-0 w-full z-10">
+                                    <img src="../images/Group 103.png" alt="">
+                                </div>
                             </div>
-    
+
                             <!-- Paragraphs -->
                             <div class="space-y-4 text-[#737373] text-[14px] md:text-[20px] inter">
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which don’t
+                                    suffered alteration in some form, by injected humour, or randomised words which
+                                    don’t
                                     look even slightly believable. If you are going to use a passage...</p>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have
                                     suffered alteration in some form, by injected humour...</p>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority...</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority...
+                                </p>
                             </div>
                         </div>
-    
+
                         <!-- Sidebar -->
                         <div class=" p-6 order-last md:order-none">
                             <div class="mb-4">
@@ -164,11 +187,10 @@
                                 <li class="flex items-start space-x-4">
                                     <!-- Thumbnail Image -->
                                     <div class="w-[100px] h-[70px]  bg-cover">
-                                        <img src="../images/single-1.jpeg"
-                                        alt="Thumbnail"
-                                        class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                        <img src="../images/single-1.jpeg" alt="Thumbnail"
+                                            class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
                                     </div>
-    
+
                                     <!-- Text Content -->
                                     <div>
                                         <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
@@ -180,14 +202,13 @@
                                 <li class="flex items-start space-x-4">
                                     <!-- Thumbnail Image -->
                                     <div class="w-[100px] h-[70px] bg-cover">
-                                        <img src="../images/single-2.jpeg"
-                                        alt="Thumbnail"
-                                        class="w-[100px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                        <img src="../images/single-2.jpeg" alt="Thumbnail"
+                                            class="w-[100px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
                                     </div>
                                     <!-- Text Content -->
                                     <div>
                                         <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
-                                            SWE React hooks with next increm ental  static regeneration.
+                                            SWE React hooks with next increm ental static regeneration.
                                         </a>
                                         <p class="text-[12px] md:text-[15px] text-[#878787]">March 17, 2023</p>
                                     </div>
@@ -195,9 +216,8 @@
                                 <li class="flex items-start space-x-4">
                                     <!-- Thumbnail Image -->
                                     <div class="w-[100px] h-[70px] object-cover bg-cover">
-                                        <img src="../images/single-3.jpeg"
-                                        alt="Thumbnail"
-                                        class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                        <img src="../images/single-3.jpeg" alt="Thumbnail"
+                                            class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
                                     </div>
                                     <!-- Text Content -->
                                     <div>
@@ -210,14 +230,13 @@
                                 <li class="flex items-start space-x-4">
                                     <!-- Thumbnail Image -->
                                     <div class="w-[100px] h-[70px] object-cover bg-cover">
-                                        <img src="../images/single-4.jpeg"
-                                        alt="Thumbnail"
-                                        class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                        <img src="../images/single-4.jpeg" alt="Thumbnail"
+                                            class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
                                     </div>
                                     <!-- Text Content -->
                                     <div>
                                         <a href="#" class="text-[#000000]  text-[14px] md:text-[20px] inter">
-                                            SWE React hooks with next increm ental  static regeneration.
+                                            SWE React hooks with next increm ental static regeneration.
                                         </a>
                                         <p class="text-[12px] md:text-[15px] text-[#878787]">March 17, 2023</p>
                                     </div>
@@ -225,9 +244,8 @@
                                 <li class="flex items-start space-x-4">
                                     <!-- Thumbnail Image -->
                                     <div class="w-[100px] h-[70px] object-cover bg-cover">
-                                        <img src="../images/single-4.jpeg"
-                                        alt="Thumbnail"
-                                        class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
+                                        <img src="../images/single-4.jpeg" alt="Thumbnail"
+                                            class="w-[70px] h-[70px] object-cover rounded-md bg-white border border-gray-300 bg-cover" />
                                     </div>
                                     <!-- Text Content -->
                                     <div>
@@ -241,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="bg-beige flex items-center justify-center p-6 order-4 md:order-none">
                     <div class=" p-8 ">
                         <!-- Title -->
@@ -273,20 +291,25 @@
                             <!-- Text Content -->
                             <div class="space-y-4 text-[14px] md:text-[20px] text-[#737373] pt-5 leading-relaxed">
                                 <p>
-                                    a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                    a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
+                                    obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+                                    cites of the word in classical literature, discovered
                                 </p>
                                 <p>
-                                    On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to thos
+                                    On the other hand, we denounce with righteous indignation and dislike men who are so
+                                    beguiled and demoralized by the charms of pleasure of the moment, so blinded by
+                                    desire, that they cannot foresee the pain and trouble that are bound to ensue; and
+                                    equal blame belongs to thos
                                 </p>
                             </div>
-    
+
                             <!-- Image Section -->
                             <div class="overflow-hidden relative order-1 md:order-2">
                                 <img src="../images/singleBlog-2.jpeg" alt="Waffle with berries"
                                     class="w-full h-[350px] object-cover">
-                                    <div class="absolute bottom-0 left-0 w-full z-10">
-                                        <img src="../images/blog-Vector (1).png"  alt="">
-                                    </div>
+                                <div class="absolute bottom-0 left-0 w-full z-10">
+                                    <img src="../images/blog-Vector (1).png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -391,17 +414,25 @@
 <script>
     function toggleMenu() {
         const menu = document.getElementById('mobile-menu');
-        const toggleIconOpen = document.getElementById('menu-icon-open');
-        const toggleIconClose = document.getElementById('menu-icon-close');
+        const menuOpenIcon = document.getElementById('menu-icon-open');
+        const menuCloseIcon = document.getElementById('menu-icon-close');
+        const body = document.body;
 
-        menu.classList.toggle('hidden'); // Toggle visibility
-        menu.classList.toggle('max-h-0'); // For smooth opening/closing
-        menu.classList.toggle('max-h-screen'); // For smooth opening/closing
-        menu.classList.toggle('transition-transform');
-        menu.classList.toggle('duration-1000');
-        // Toggle icons
-        toggleIconOpen.classList.toggle('hidden');
-        toggleIconClose.classList.toggle('hidden');
+        if (menu.classList.contains('-translate-x-full')) {
+            // Open menu
+            menu.classList.remove('-translate-x-full');
+            menu.classList.add('translate-x-0');
+            menuOpenIcon.classList.add('hidden');
+            menuCloseIcon.classList.remove('hidden');
+            body.style.overflow = 'hidden'; // Prevent scrolling
+        } else {
+            // Close menu
+            menu.classList.add('-translate-x-full');
+            menu.classList.remove('translate-x-0');
+            menuOpenIcon.classList.remove('hidden');
+            menuCloseIcon.classList.add('hidden');
+            body.style.overflow = ''; // Restore scrolling
+        }
     }
 </script>
 

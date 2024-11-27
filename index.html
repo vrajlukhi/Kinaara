@@ -15,76 +15,99 @@
     <!-- Header Section -->
     <header class="bg-[#f5e2d7]">
         <div class="container mx-auto">
-            <div class="pe-4 py-3 flex items-center justify-between">
+            <div class="px-4 py-6 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1.5 p-1.5 ps-0">
                         <img class="lg:w-[100px] lg:h-[100px] md:w-[70px] md:h-[70px] w-[40px] h-[40px]"
-                            src="../images/logo.png" alt="Kinaara Logo">
+                            src="../images/logo.png" alt="Kinaara Logo" />
                     </a>
                 </div>
-    
+
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
                     <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center text-center py-1.5">
-                        <a href="index.html" class="text-sm lg:text-lg text-white z-[1] hover:font-semibold inter ">HOME</a>
+                        <a href="index.html" class="text-sm lg:text-lg text-white hover:font-semibold inter">HOME</a>
                     </div>
-                    <a href="pages/about.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
-                    <a href="pages/gallary.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
-                    <a href="pages/menu.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
-                    <a href="pages/blogs.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
-                    <a href="pages/contact.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
+                    <a href="pages/about.html"
+                        class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
+                    <a href="pages/gallary.html"
+                        class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
+                    <a href="pages/menu.html"
+                        class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">MENU</a>
+                    <a href="pages/blogs.html"
+                        class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">BLOGS</a>
+                    <a href="pages/contact.html"
+                        class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">CONTACT</a>
                 </nav>
-    
+
                 <!-- Call to Action Button -->
-                <div class="md:flex hidden">
+                <div class="hidden md:flex">
                     <a href="#"
-                        class="hidden md:block text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                        class="text-sm otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
                         PLACE ORDER
                     </a>
                 </div>
-    
+
                 <!-- Mobile Menu Toggle Button -->
                 <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
-                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
+                    <!-- Hamburger Icon -->
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
-                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden transition-transform duration-300" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
+                    <!-- Close Icon -->
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
-    
-            <!-- Mobile Menu -->
-            <div id="mobile-menu"
-                class="hidden h-[100vh] overflow-hidden transition-all duration-300 md:hidden bg-[#f5e2d7] border-t border-gray-200">
-                <nav class="space-y-2 py-4 px-4">
-                    <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center text-center py-1.5">
-                        <a href="index.html" class="block text-lg text-white hover:font-semibold">HOME</a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed w-full h-full bg-[#f5e2d7] -mt-6 text-white transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+            <div class="overflow-hidden">
+                <div class="text-white font-sans bg-opacity-70">
+                    <div class="relative z-10 container px-6">
+                        <nav class="space-y-6 py-4 px-4">
+                            <div
+                                class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center text-center py-1.5">
+                                <a href="index.html" class="block text-lg text-white hover:font-semibold">HOME</a>
+                            </div>
+                            <a href="pages/about.html"
+                                class="block text-lg text-[#7F5637] hover:font-semibold">ABOUT</a>
+                            <a href="pages/gallary.html"
+                                class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
+                            <a href="pages/menu.html" class="block text-lg text-[#7F5637] hover:font-semibold">MENU</a>
+                            <a href="pages/blogs.html"
+                                class="block text-lg text-[#7F5637] hover:font-semibold">BLOGS</a>
+                            <a href="pages/contact.html" class="block text-lg text-[#7F5637] hover:font-semibold pb-10">
+                                CONTACT
+                            </a>
+                            <a href="#"
+                                class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">
+                                PLACE ORDER
+                            </a>
+                        </nav>
                     </div>
-                    <a href="pages/about.html" class="block text-lg text-[#7F5637] hover:font-semibold">ABOUT</a>
-                    <a href="pages/gallary.html" class="block text-lg text-[#7F5637] hover:font-semibold">GALLERY</a>
-                    <a href="pages/menu.html" class="block text-lg text-[#7F5637] hover:font-semibold">MENU</a>
-                    <a href="pages/blogs.html" class="block text-lg text-[#7F5637] hover:font-semibold">BLOGS</a>
-                    <a href="pages/contact.html" class="block text-lg text-[#7F5637] hover:font-semibold pb-10">CONTACT</a>
-                    <a href="#" class="text-center text-sm font-normal border border-[#7c4d3a] text-[#7c4d3a] py-2 mt-10 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">PLACE ORDER</a>
-                </nav>
+                </div>
             </div>
         </div>
     </header>
-    
 
     <!-- banner Section -->
     <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-80">
         <div>
             <div class="container mx-auto px-6 lg:px-8">
-                <div class="grid grid-cols-1 my-auto">
+                <div class="grid grid-cols-1 my-auto ">
                     <!-- Text Content -->
-                    <div class="space-y-1 md:space-y-6 text-left">
+                    <div class="space-y-1 md:space-y-6 text-left md:translate-y-20">
                         <h2 class="text-[#7c4d3a] text-sm md:text-3xl xl:text-7xl font-bold otomanopee">
                             KINAARA <span class="text-black">THE</span>
                         </h2>
@@ -125,52 +148,53 @@
 
     <!-- About us section -->
     <section class="bg-[#F0ECEB] py-32 ">
-       <div class="lg:bg-[url('../images/Pan-line.png')] bg-no-repeat">
-        <div class="container mx-auto px-6 lg:px-8 ">
-            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 	">
-                <!-- Coffee Image -->
-                <div class="relative flex w-[100%] h-[100%] ">
-                    <div class="lg:absolute z-[9999] left-[-100px] top-[-100px]">
-                        <img src="../images/Pan-coffee-image-removebg-preview.png" alt="Coffee Cup Splash"
-                            class=" w-[100%] lg:w-[900px] ">
-                    </div>
-
-                </div>
-
-                <!-- Text Content -->
-                <div class="space-y-6 text-left">
-                    <div class="heading relative">
-                        <div>
-                            <h2 class="text-[#7c4d3a] text-3xl lg:text-5xl font-bold pb-12 otomanopee">ABOUT <span
-                                    class="text-black">US</span></h2>
-                            <img src="../images/Heading-coffee-image.png"
-                                class="absolute w-[35%] -top-5 right-[110px] sm:-top-16 sm:right-[300px] md:-top-20 md:right-[400px]  lg:-top-8 lg:right-[100px] xl:-top-16 xl:right-[300px] opacity-25	"
-                                alt="">
+        <div class="lg:bg-[url('../images/Pan-line.png')] bg-no-repeat">
+            <div class="container mx-auto px-6 lg:px-8 ">
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 	">
+                    <!-- Coffee Image -->
+                    <div class="relative flex w-[100%] h-[100%] ">
+                        <div class="lg:absolute z-[9] left-[-100px] top-[-100px]">
+                            <img src="../images/Pan-coffee-image-removebg-preview.png" alt="Coffee Cup Splash"
+                                class=" w-[100%] lg:w-[900px] ">
                         </div>
+
                     </div>
-                    <ul class="text-sm md:text-lg text-gray-700 space-y-4 inter">
-                        <li class="flex items-start">
-                            <span class="text-[#7c4d3a] text-xl md:text-2xl mr-3">&#10003;</span>
-                            <p>Situated At Coast Of Tapi River</p>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#7c4d3a] text-xl md:text-2xl mr-3">&#10003;</span>
-                            <p>Featuring An Ambience Which Rejuvenates You Every Time You Visit Us.</p>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#7c4d3a] text-xl md:text-2xl mr-3">&#10003;</span>
-                            <p>Don't Forget To Try Our Inventive Drinks. It Will Be A Sure Shot Pleasure To Your Taste
-                                Buds Too.</p>
-                        </li>
-                    </ul>
-                    <a href="pages/about.html"
-                        class="inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white">
-                        View More
-                    </a>
+
+                    <!-- Text Content -->
+                    <div class="space-y-6 text-left">
+                        <div class="heading relative">
+                            <div>
+                                <h2 class="text-[#7c4d3a] text-3xl lg:text-5xl font-bold pb-12 otomanopee">ABOUT <span
+                                        class="text-black">US</span></h2>
+                                <img src="../images/Heading-coffee-image.png"
+                                    class="absolute w-[35%] -top-5 right-[110px] sm:-top-16 sm:right-[300px] md:-top-20 md:right-[400px]  lg:-top-8 lg:right-[100px] xl:-top-16 xl:right-[300px] opacity-25	"
+                                    alt="">
+                            </div>
+                        </div>
+                        <ul class="text-sm md:text-lg text-gray-700 space-y-4 inter">
+                            <li class="flex items-start">
+                                <span class="text-[#7c4d3a] text-xl md:text-2xl mr-3">&#10003;</span>
+                                <p>Situated At Coast Of Tapi River</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#7c4d3a] text-xl md:text-2xl mr-3">&#10003;</span>
+                                <p>Featuring An Ambience Which Rejuvenates You Every Time You Visit Us.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#7c4d3a] text-xl md:text-2xl mr-3">&#10003;</span>
+                                <p>Don't Forget To Try Our Inventive Drinks. It Will Be A Sure Shot Pleasure To Your
+                                    Taste
+                                    Buds Too.</p>
+                            </li>
+                        </ul>
+                        <a href="pages/about.html"
+                            class="inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white">
+                            View More
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-       </div>
     </section>
 
     <!-- gallery section -->
@@ -654,11 +678,13 @@
             <div class="container mx-auto">
                 <div class="flex items-center justify-between px-6 pb-12 pt-20">
                     <div>
-                      <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
-                      <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
+                        <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
+                        <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
                     </div>
-                    <button class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING TABLE</button>
-                  </div>
+                    <button
+                        class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING
+                        TABLE</button>
+                </div>
             </div>
             <!-- Wavy Background -->
             <div class="absolute top-0 left-0 w-full">
@@ -738,17 +764,25 @@
 <script>
     function toggleMenu() {
         const menu = document.getElementById('mobile-menu');
-        const toggleIconOpen = document.getElementById('menu-icon-open');
-        const toggleIconClose = document.getElementById('menu-icon-close');
+        const menuOpenIcon = document.getElementById('menu-icon-open');
+        const menuCloseIcon = document.getElementById('menu-icon-close');
+        const body = document.body;
 
-        menu.classList.toggle('hidden'); // Toggle visibility
-        menu.classList.toggle('max-h-0'); // For smooth opening/closing
-        menu.classList.toggle('max-h-screen'); // For smooth opening/closing
-        menu.classList.toggle('transition-transform');
-        menu.classList.toggle('duration-1000');
-        // Toggle icons
-        toggleIconOpen.classList.toggle('hidden');
-        toggleIconClose.classList.toggle('hidden');
+        if (menu.classList.contains('-translate-x-full')) {
+            // Open menu
+            menu.classList.remove('-translate-x-full');
+            menu.classList.add('translate-x-0');
+            menuOpenIcon.classList.add('hidden');
+            menuCloseIcon.classList.remove('hidden');
+            body.style.overflow = 'hidden'; // Prevent scrolling
+        } else {
+            // Close menu
+            menu.classList.add('-translate-x-full');
+            menu.classList.remove('translate-x-0');
+            menuOpenIcon.classList.remove('hidden');
+            menuCloseIcon.classList.add('hidden');
+            body.style.overflow = ''; // Restore scrolling
+        }
     }
 </script>
 
