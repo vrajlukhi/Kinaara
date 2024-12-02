@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -158,15 +159,15 @@
                                 <img src="../images/Pan-coffee-image-removebg-preview.png" alt="Coffee Cup Splash"
                                     class=" w-[100%] lg:w-[900px] ">
                             </div>
-    
+
                         </div>
-    
+
                         <!-- Text Content -->
                         <div class="space-y-6 text-left">
                             <div class="heading relative">
                                 <div>
-                                    <h2 class="text-[#7c4d3a] text-3xl lg:text-5xl font-bold pb-12 otomanopee">ABOUT <span
-                                            class="text-black">US</span></h2>
+                                    <h2 class="text-[#7c4d3a] text-3xl lg:text-5xl font-bold pb-12 otomanopee">ABOUT
+                                        <span class="text-black">US</span></h2>
                                     <img src="../images/Heading-coffee-image.png"
                                         class="absolute w-[35%] -top-5 right-[110px] sm:-top-16 sm:right-[300px] md:-top-20 md:right-[400px]  lg:-top-8 lg:right-[100px] xl:-top-16 xl:right-[300px] opacity-25	"
                                         alt="">
@@ -217,13 +218,10 @@
                         </div>
                     </div>
 
-                    <!-- Gallery Section -->
-                    <div class="flex items-center justify-between">
-
-                        <!-- Image Gallery -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full">
-                            <!-- Ice Cream Card -->
-                            <div class="relative group">
+                    <div class="swiper mySwiper mx-auto">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="swiper-slide h-[187px] me-2 md:h-[300px] lg:h-[485px] flex justify-center items-center text-white text-lg font-bold relative group">
                                 <img src="../images/gallary-1.jpeg" alt="Ice Cream"
                                     class="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300" />
                                 <div
@@ -234,9 +232,8 @@
                                     <p class="text-white text-lg font-bold">ICE CREAM</p>
                                 </div>
                             </div>
-
-                            <!-- Coffee Card -->
-                            <div class="relative group lg:translate-y-16">
+                            <div
+                                class="swiper-slide relative group mt-10 h-[187px] me-2 md:h-[300px] lg:h-[485px] flex justify-center items-center text-black text-lg font-bold">
                                 <img src="../images/gallery-2.jpeg" alt="Coffee"
                                     class="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300" />
                                 <div
@@ -247,9 +244,8 @@
                                     <p class="text-white text-lg font-bold">ICE CREAM</p>
                                 </div>
                             </div>
-
-                            <!-- Cake Card -->
-                            <div class="relative group">
+                            <div
+                                class="swiper-slide relative group h-[187px] me-2 md:h-[300px] lg:h-[485px] flex justify-center items-center text-black text-lg font-bold">
                                 <img src="../images/gallery-3.jpeg" alt="Cake"
                                     class="w-full h-full object-cover rounded-lg shadow-m transition-transform duration-300" />
                                 <div
@@ -260,9 +256,56 @@
                                     <p class="text-white text-lg font-bold">ICE CREAM</p>
                                 </div>
                             </div>
-
-                            <!-- Latte Card -->
-                            <div class="relative group lg:translate-y-16">
+                            <div
+                                class="swiper-slide relative group mt-10 h-[187px] me-2 md:h-[300px] lg:h-[485px] flex justify-center items-center text-white text-lg font-bold">
+                                <img src="../images/gallery-4.jpeg" alt="Latte"
+                                    class="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300" />
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <p class="text-white text-lg font-bold">ICE CREAM</p>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide h-[187px] me-2 md:h-[300px] lg:h-[485px] flex justify-center items-center text-white text-lg font-bold relative group">
+                                <img src="../images/gallary-1.jpeg" alt="Ice Cream"
+                                    class="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300" />
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0  group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <p class="text-white text-lg font-bold">ICE CREAM</p>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide relative group mt-10 h-[187px] me-2 md:h-[300px] lg:h-[485px] flex justify-center items-center text-black text-lg font-bold">
+                                <img src="../images/gallery-2.jpeg" alt="Coffee"
+                                    class="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300" />
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <p class="text-white text-lg font-bold">ICE CREAM</p>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide relative group h-[187px] me-2 md:h-[300px] lg:h-[485px] flex justify-center items-center text-black text-lg font-bold">
+                                <img src="../images/gallery-3.jpeg" alt="Cake"
+                                    class="w-full h-full object-cover rounded-lg shadow-m transition-transform duration-300" />
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <p class="text-white text-lg font-bold">ICE CREAM</p>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide relative group mt-10 h-[187px] me-2 md:h-[300px] lg:h-[485px] flex justify-center items-center text-white text-lg font-bold">
                                 <img src="../images/gallery-4.jpeg" alt="Latte"
                                     class="w-full h-full object-cover rounded-lg shadow-md transition-transform duration-300" />
                                 <div
@@ -274,33 +317,32 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- View More Button -->
-                    <div class="text-center mt-5 lg:my-32">
-                        <a href="pages/gallary.html"
-                            class="border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-colors">
-                            View More
-                    </a>
+                        <!-- View More Button -->
+                        <div class="text-center mt-10 mb-2 lg:my-32">
+                            <a href="pages/gallary.html"
+                                class="border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-colors">
+                                View More
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Wavy Background -->
-            <div class="absolute top-0 left-0 w-full">
-                <img src="../images/gallery-wave-1.png" class="w-full" alt="Wavy Background">
-            </div>
-            <div class="absolute bottom-0 left-0 w-full">
-                <img src="../images/gallery-wave-2.png" class="w-full" alt="Wavy Background">
-            </div>
+                <!-- Wavy Background -->
+                <div class="absolute top-0 left-0 w-full">
+                    <img src="../images/gallery-wave-1.png" class="w-full" alt="Wavy Background">
+                </div>
+                <div class="absolute bottom-0 left-0 w-full">
+                    <img src="../images/gallery-wave-2.png" class="w-full" alt="Wavy Background">
+                </div>
 
-            <div class="absolute hidden lg:block lg:bottom-12 lg:left-0">
-                <img src="../images/gallery-leaves.png" class="" alt="Decorative Flower">
-            </div>
-            <div class="absolute hidden lg:block lg:top-12 lg:right-0">
-                <img src="../images/gallery-leaves.png" class="scale-x-[-1]" alt="Decorative Flower">
-            </div>
+                <div class="absolute hidden lg:block lg:bottom-12 lg:left-0">
+                    <img src="../images/gallery-leaves.png" class="" alt="Decorative Flower">
+                </div>
+                <div class="absolute hidden lg:block lg:top-12 lg:right-0">
+                    <img src="../images/gallery-leaves.png" class="scale-x-[-1]" alt="Decorative Flower">
+                </div>
 
-        </div>
+            </div>
 
     </section>
 
@@ -360,24 +402,24 @@
                     </div>
                 </div>
 
-                <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Blog Card -->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                        <img src="../images/blog-1.jpeg" alt="Elegant Dessert" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <p class="text-sm text-gray-500 mb-2">March 17, 2023 · Ice Cream</p>
-                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Elegant Dessert: 10 Tips To Make <br>
-                                It At Home
-                            </h2>
-                            <a href="pages/single.blog.html"
-                                class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
-                                More</a>
+                <div class="swiper blogSwiper mt-10">
+                    <div class="swiper-wrapper">
+                        <div
+                            class="swiper-slide bg-white overflow-hidden justify-center items-center me-3 border-b-4 border-[#7F5637]">
+                            <img src="../images/blog-1.jpeg" alt="Elegant Dessert" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <p class="text-sm text-gray-500 mb-2">March 17, 2023 · Ice Cream</p>
+                                <h2 class="text-lg font-semibold text-gray-800 mb-4">Elegant Dessert: 10 Tips To Make <br>
+                                    It At Home
+                                </h2>
+                                <a href="pages/single.blog.html"
+                                    class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                                    More</a>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Blog Card -->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                        <img src="../images/blog-2.jpeg" alt="React Hooks" class="w-full h-48 object-cover">
+                        <div
+                            class="swiper-slide bg-white overflow-hidden justify-center items-center me-3 border-b-4 border-[#7F5637]">
+                            <img src="../images/blog-2.jpeg" alt="React Hooks" class="w-full h-48 object-cover">
                         <div class="p-4">
                             <p class="text-sm text-gray-500 mb-2">March 15, 2023 · Coffee</p>
                             <h2 class="text-lg font-semibold text-gray-800 mb-4">SWE React Hooks With Next Incremental
@@ -386,22 +428,59 @@
                                 class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
                                 More</a>
                         </div>
-                    </div>
-
-                    <!-- Blog Card -->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                        <img src="../images/blog-3.jpeg" alt="Cocktails" class="w-full h-48 object-cover">
+                        </div>
+                        <div
+                            class="swiper-slide bg-white overflow-hidden justify-center items-center me-3 border-b-4 border-[#7F5637]">
+                            <img src="../images/blog-3.jpeg" alt="Cocktails" class="w-full h-48 object-cover">
                         <div class="p-4">
                             <p class="text-sm text-gray-500 mb-2">March 17, 2023 · Ice Cream</p>
-                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Ideal Cocktails From Our Varmen For
+                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Ideal Cocktails From Our Varmen For <br>
                                 Perfect
                                 Mood</h2>
                             <a href="pages/single.blog.html"
                                 class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6  rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
                                 More</a>
                         </div>
+                        </div>
+                        <div
+                            class="swiper-slide bg-white overflow-hidden justify-center items-center me-3 border-b-4 border-[#7F5637]">
+                            <img src="../images/blog-1.jpeg" alt="Elegant Dessert" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <p class="text-sm text-gray-500 mb-2">March 17, 2023 · Ice Cream</p>
+                                <h2 class="text-lg font-semibold text-gray-800 mb-4">Elegant Dessert: 10 Tips To Make <br>
+                                    It At Home
+                                </h2>
+                                <a href="pages/single.blog.html"
+                                    class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                                    More</a>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide bg-white overflow-hidden justify-center items-center me-3 border-b-4 border-[#7F5637]">
+                            <img src="../images/blog-2.jpeg" alt="React Hooks" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-gray-500 mb-2">March 15, 2023 · Coffee</p>
+                            <h2 class="text-lg font-semibold text-gray-800 mb-4">SWE React Hooks With Next Incremental
+                                Static Regeneration</h2>
+                            <a href="pages/single.blog.html"
+                                class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6 rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                                More</a>
+                        </div>
+                        </div>
+                        <div
+                            class="swiper-slide bg-white overflow-hidden justify-center items-center me-3 border-b-4 border-[#7F5637]">
+                            <img src="../images/blog-3.jpeg" alt="Cocktails" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-gray-500 mb-2">March 17, 2023 · Ice Cream</p>
+                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Ideal Cocktails From Our Varmen For <br>
+                                Perfect
+                                Mood</h2>
+                            <a href="pages/single.blog.html"
+                                class="otomanopee font-normal transition-all border border-[#7c4d3a] text-[#7c4d3a] py-2 px-6  rounded hover:bg-[#7c4d3a] hover:text-white transition-all">View
+                                More</a>
+                        </div>
+                        </div>
                     </div>
-                </div>
 
                 <div class="text-center my-8">
                     <a href="pages/blogs.html"
@@ -766,6 +845,34 @@
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2.5,
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+            },
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".blogSwiper", {
+        slidesPerView: 1.5,
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+</script>
+</script>
 <script>
     function toggleMenu() {
         const menu = document.getElementById('mobile-menu');
