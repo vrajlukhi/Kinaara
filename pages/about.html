@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        header.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.5s;
+        }
+    </style>
 </head>
 
 <body>
@@ -466,8 +476,27 @@
 
         </div>
     </footer>
+    <div class="border-t border-[#64462F] text-center inter text-[#737373] bg-[#f5e2d7] py-5 block md:hidden">
+        <p>Header photo by Kinaara The Café @2023</p>
+    </div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('header').addClass("sticky");
+            $('header').addClass("transition-transform");
+            $('header').addClass("duration-[3000ms]");
+        }
+        else {
+            $('header').removeClass("sticky");
+            $('header').addClass("transition-transform");
+            $('header').addClass("duration-[3000ms]");
+        }
+    })
+</script>
 
 <script>
     function toggleMenu() {

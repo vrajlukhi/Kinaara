@@ -10,6 +10,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        header.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.5s;
+        }
+    </style>
 </head>
 
 <body>
@@ -403,16 +413,16 @@
 
                 <!-- Wavy Background Elements -->
                 <div class="absolute top-0 left-0 w-full z-10">
-                    <img src="../images/Vector-Top.png" class="w-full" alt="Wavy Top Background">
+                    <img src="images/Vector-Top.png" class="w-full" alt="Wavy Top Background">
                 </div>
                 <div class="absolute bottom-0 left-0 w-full z-0">
-                    <img src="../images/Vector-Bottom.png" class="w-full" alt="Wavy Bottom Background">
+                    <img src="images/Vector-Bottom.png" class="w-full" alt="Wavy Bottom Background">
                 </div>
                 <div class="absolute -top-10 lg:top-0 -left-52 lg:-left-44 z-0">
-                    <img src="../images/Vector-Left.png" class="w-full" alt="Wavy Left Background">
+                    <img src="images/Vector-Left.png" class="w-full" alt="Wavy Left Background">
                 </div>
                 <div class="absolute -top-28 lg:-top-10 -right-52 lg:-right-40 z-0">
-                    <img src="../images/Vector-Right.png" class="w-full" alt="Wavy Right Background">
+                    <img src="images/Vector-Right.png" class="w-full" alt="Wavy Right Background">
                 </div>
             </div>
         </div>
@@ -903,10 +913,30 @@
 
         </div>
     </footer>
+    <div class="border-t border-[#64462F] text-center inter text-[#737373] bg-[#f5e2d7] py-5 block md:hidden">
+        <p>Header photo by Kinaara The Café @2023</p>
+    </div>
 
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('header').addClass("sticky");
+            $('header').addClass("transition-transform");
+            $('header').addClass("duration-[3000ms]");
+        }
+        else {
+            $('header').removeClass("sticky");
+            $('header').addClass("transition-transform");
+            $('header').addClass("duration-[3000ms]");
+        }
+    })
+</script>
 
 <!-- Initialize Swiper -->
 <script>

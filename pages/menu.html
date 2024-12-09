@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        header.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.5s;
+        }
+    </style>
 </head>
 
 <body>
@@ -157,12 +167,12 @@
         <div>
             <div class="container mx-auto px-4 z-10">
                 <!-- Section Title -->
-                <div class="heading relative">
+                <div class="heading relative pb-10">
                     <div>
-                        <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">GOURMET
+                        <h2 class="text-center text-[24px] lg:text-5xl font-bold text-[#7f5637] otomanopee my-8">GOURMET
                             SANDWICHES</h2>
                         <img src="../images/Heading-coffee-image.png"
-                            class="absolute w-[25%] md:w-[15%] -top-4 right-[-20px] sm:-top-10 sm:right-[70px] md:-top-4 md:right-[110px]  lg:-top-8 lg:right-[170px] xl:-top-16 xl:right-[380px] opacity-25	"
+                            class="absolute w-[25%] md:w-[15%] -top-4 right-[-20px] sm:-top-10 sm:right-[70px] md:-top-4 md:right-[110px]  lg:-top-5 lg:right-[110px] xl:-top-14 xl:right-[320px] opacity-25	"
                             alt="">
                     </div>
                 </div>
@@ -250,7 +260,7 @@
                     </div>
                 </div>
 
-                <div class="heading relative">
+                <div class="heading relative pb-10">
                     <div>
                         <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">ASIAN &
                             ORIENTAL</h2>
@@ -344,7 +354,7 @@
 
 
                 </div>
-                <div class="heading relative">
+                <div class="heading relative pb-10">
                     <div>
                         <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">pasta &
                             santeed veggies</h2>
@@ -441,7 +451,7 @@
 
                 </div>
 
-                <div class="heading relative">
+                <div class="heading relative pb-10">
                     <div>
                         <h2 class="text-center text-[24px] lg:text-4xl font-bold text-[#7f5637] otomanopee my-8">cafe
                             special pizza</h2>
@@ -535,16 +545,16 @@
                 </div>
             </div>
 
-            <div class="absolute hidden md:block right-[10%] top-[4%] z-10">
+            <div class="absolute hidden md:block right-[10%] top-[5.5%] z-10">
                 <h2 class="text-[70px] md:text-[160px] otomanopee text-[#7F5637] opacity-5">SANDWICHES</h2>
             </div>
-            <div class="absolute hidden md:block left-0 top-[27%]">
+            <div class="absolute hidden md:block left-0 top-[30%] z-10">
                 <h2 class="text-[70px] md:text-[160px] otomanopee text-[#7F5637] opacity-5">ASIAN & ORIENTAL</h2>
             </div>
-            <div class="absolute hidden md:block right-[-10%] top-[50%]">
+            <div class="absolute hidden md:block right-[-3%] top-[52%] z-10">
                 <h2 class="text-[70px] md:text-[160px] otomanopee text-[#7F5637] opacity-5">pasta & santeed</h2>
             </div>
-            <div class="absolute hidden md:block left-0 top-[75%]">
+            <div class="absolute hidden md:block left-0 top-[77%] z-10">
                 <h2 class="text-[70px] md:text-[160px] otomanopee text-[#7F5637] opacity-5">ASIAN & ORIENTAL</h2>
             </div>
         </div>
@@ -643,9 +653,28 @@
 
         </div>
     </footer>
+    <div class="border-t border-[#64462F] text-center inter text-[#737373] bg-[#f5e2d7] py-5 block md:hidden">
+        <p>Header photo by Kinaara The Café @2023</p>
+    </div>
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('header').addClass("sticky");
+            $('header').addClass("transition-transform");
+            $('header').addClass("duration-[3000ms]");
+        }
+        else {
+            $('header').removeClass("sticky");
+            $('header').addClass("transition-transform");
+            $('header').addClass("duration-[3000ms]");
+        }
+    })
+</script>
 <script>
     function toggleMenu() {
         const menu = document.getElementById('mobile-menu');
