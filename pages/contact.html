@@ -25,7 +25,7 @@
     <!-- Header Section -->
     <header class="bg-[#f5e2d7]">
         <div class="container mx-auto">
-            <div class="px-4 py-6 flex items-center justify-between">
+            <div class="px-4 lg:py-2 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1.5 p-1.5 ps-0">
@@ -35,7 +35,7 @@
                 </div>
 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
+                <nav class="hidden md:flex items-center space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
                     <a href="../index.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">HOME</a>
                     <a href="about.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">ABOUT</a>
                     <a href="gallary.html" class="text-sm lg:text-lg text-[#7F5637] hover:font-semibold inter">GALLERY</a>
@@ -76,7 +76,7 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu"
-            class="fixed w-full h-full bg-[#f5e2d7] -mt-6 text-white transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+            class="fixed w-full h-full bg-[#f5e2d7] text-white transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
             <div class="overflow-hidden">
                 <div class="text-white font-sans bg-opacity-70">
                     <div class="relative z-10 container px-6">
@@ -101,7 +101,7 @@
     </header>
 
     <!-- banner Section -->
-    <section class="bg-[#f5e2d7] relative pb-6 lg:pb-32 xl:pb-52 overflow-hidden">
+    <section class="bg-[#f5e2d7] relative pb-6 md:pb-12 lg:pb-32 xl:pb-52 overflow-hidden">
         <div>
             <div class="container mx-auto px-6 lg:px-8">
                 <div class="grid grid-cols-2">
@@ -113,7 +113,7 @@
                                     class="text-[#7c4d3a] text-[24px] md:text-[30px] lg:text-7xl font-bold pb-12 otomanopee">
                                     CONTACT </h2>
                                 <img src="../images/Heading-coffee-image.png"
-                                    class="absolute w-[35%]  -top-0 right-[30px] sm:-top-4 sm:right-[120px] md:-top-5 md:right-[140px]  lg:-top-2 lg:right-[30px] xl:-top-12 xl:right-[230px] opacity-25	"
+                                    class="absolute w-[35%]  -top-0 right-[30px] sm:-top-4 sm:right-[120px] md:-top-5 md:right-[140px]  lg:-top-2 lg:right-[30px] xl:-top-8 xl:right-[140px] 2xl:-top-12 2xl:right-[230px] opacity-25"
                                     alt="">
                             </div>
                         </div>
@@ -133,10 +133,10 @@
 
             <!-- banner image -->
 
-            <div class="absolute right-0 -bottom-16 lg:right-10 lg:-bottom-32 xl:right-10 xl:-bottom-36 w-[45%] sm:w-[30%] md:w-[30%] lg:w-[35%] xl:w-[25%] z-10">
+            <div class="absolute right-0 -bottom-16 lg:right-10 lg:-bottom-32 xl:right-10 xl:-bottom-36 w-[45%] sm:w-[30%] md:w-[30%] lg:w-[35%] xl:w-[30%] 2xl:w-[25%] z-10">
                 <img src="../images/contact-1.png" class="w-full" alt="Coffee Cup">
             </div>
-            <div class="absolute right-[-120px] -bottom-10 lg:right-[-200px] lg:-bottom-10 xl:right-[-250px] xl:-bottom-20 w-[60%] sm:w-[30%] md:w-[30%] lg:w-[40%] xl:w-[30%] rotate-[37deg]">
+            <div class="absolute right-[-120px] -bottom-10 lg:right-[-200px] lg:-bottom-10 xl:right-[-250px] xl:-bottom-20 w-[60%] sm:w-[30%] md:w-[40%] lg:w-[40%] xl:w-[40%] 2xl:w-[30%] rotate-[37deg]">
                 <img src="../images/contact-2.png" class="w-full" alt="Coffee Cup">
             </div>
 
@@ -158,10 +158,10 @@
         </div>
     </section>
 
-    <section class="bg-[#F0ECEB] py-16">
+    <section class="bg-[#F0ECEB] py-10 lg:py-16">
         <div class="container mx-auto px-4">
             <!-- Heading -->
-            <h2 class="text-center md:text-[50px] otomanopee text-[24px] text-[#7F5637] mb-8">
+            <h2 class="text-center lg:text-[50px] otomanopee text-[24px] text-[#7F5637] mb-4 lg:mb-8">
                 "GET IN TOUCH WITH KINAARA THE CAFE"
             </h2>
 
@@ -172,26 +172,26 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <!-- Name -->
                             <input type="text" name="name" placeholder="Name"
-                                class="w-full p-3 border border-gray-300 rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-gray-700"
+                                class="w-full p-3 bg-transparent border border-[#7f5637] rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-[#7f5637]"
                                 required />
                             <!-- Phone Number -->
                             <input type="text" name="phone" placeholder="Phone Number"
-                                class="w-full p-3 border border-gray-300 rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-gray-700"
+                                class="w-full p-3 bg-transparent border border-[#7f5637] rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-[#7f5637]"
                                 required />
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <!-- Email -->
                             <input type="email" name="email" placeholder="Email"
-                                class="w-full p-3 border border-gray-300 rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-gray-700"
+                                class="w-full p-3 bg-transparent border border-[#7f5637] rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-[#7f5637]"
                                 required />
                             <!-- Address -->
                             <input type="text" name="address" placeholder="Address"
-                                class="w-full p-3 border border-gray-300 rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-gray-700"
+                                class="w-full p-3 bg-transparent border border-[#7f5637] rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-[#7f5637]"
                                 required />
                         </div>
                         <!-- Message -->
                         <textarea name="message" placeholder="Message" rows="4"
-                            class="w-full p-3 border border-gray-300 rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-gray-700"
+                            class="w-full p-3 bg-transparent border border-[#7f5637] rounded-md focus:ring-[#6F4F38] focus:border-[#6F4F38] text-[#7f5637]"
                             required></textarea>
                         <!-- Submit Button -->
                         <div class="text-center">
@@ -216,26 +216,26 @@
     <section class="bg-[#64462F] relative">
         <div>
             <div class="container mx-auto">
-                <div class="flex items-center justify-between px-6 pb-12 pt-20">
+                <div class="flex items-center justify-between px-6 pb-6 pt-10 md:pb-8 md:pt-16 lg:pb-12 lg:pt-20">
                     <div>
-                        <h1 class="text-[14px] md:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
-                        <h2 class="text-[14px] md:text-[40px] text-white otomanopee">HOUSE</h2>
+                        <h1 class="text-[14px] md:text-[28px] lg:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
+                        <h2 class="text-[14px] md:text-[28px] lg:text-[40px] text-white otomanopee">HOUSE</h2>
                     </div>
                     <button
-                        class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING
+                        class="otomanopee font-normal text-[12px] md:text-[18px] transition-all border border-[#F0ECEB] hover:bg-[#fff] hover:border-[#64462F]  hover:text-[#64462F] text-[#F0ECEB] py-2 px-6 md:mb-5 rounded transition-all">BOOKING
                         TABLE</button>
                 </div>
             </div>
             <!-- Wavy Background -->
             <div class="absolute top-0 left-0 w-full">
-                <img src="../images/Group 79.png" class="w-full" alt="Wavy Background">
+                <img src="../images/Group 79.png" class="w-full scale-x-[-1]" alt="Wavy Background">
             </div>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="bg-[#f5e2d7] text-[#4b3c36] py-10 px-5 md:px-16">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
             <!-- Logo and Info -->
             <div class="space-y-4">
@@ -244,16 +244,16 @@
                     Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Ut Ex Libero, Condimentum At Lectus.
                 </p>
                 <div class="flex space-x-2 text-xl">
-                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-4">
+                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-4 transition-all">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-3">
+                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-3 transition-all">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" class="bg-[#7f5637] hover:bg-white  text-white hover:text-[#7f5637] rounded-full p-2 px-3">
+                    <a href="#" class="bg-[#7f5637] hover:bg-white  text-white hover:text-[#7f5637] rounded-full p-2 px-3 transition-all">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-3">
+                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-3 transition-all">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </div>
@@ -270,15 +270,22 @@
             </div>
 
             <!-- Contact Info -->
-            <div class="space-y-2">
+            <div class="space-y-4">
                 <h3 class="otomanopee text-[22px] font-semibold text-[#7F5637]">Contact <span
                         class="text-[#000000]">Us</span></h3>
-                <p class="inter text-[16px] text-[#737373]">
-                    <i class="fa-solid fa-phone text-[#7F5637] pb-2 pe-2 text-[18px]"></i> <span>063587 50033 - 097265
+                <p class="inter text-[16px] text-[#737373] ">
+                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-1 mb-3 px-2 me-2 transition-all inline-block">
+                        <i class="fa-solid fa-phone text-[14px] mx-auto text-center"></i>
+                    </a>
+                     <span>063587 50033 - 097265
                         50033</span> <br>
-                    <i class="fa-solid fa-envelope text-[#7F5637] pb-2 pe-2 text-[18px]"></i>
+                        <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-1 mb-3 px-2.5 me-2 transition-all inline-block">
+                            <i class="fa-solid fa-envelope pb-2 text-[14px]"></i>
+                        </a>
                     <span>Kinaara@Gmail.Com</span> <br>
-                    <i class="fa-solid fa-location-dot text-[#7F5637] pb-2 pe-2 text-[18px]"></i> <span>Behind S D Jain
+                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-1 mb-3 px-3 me-2 transition-all inline-block">
+                        <i class="fa-solid fa-location-dot pb-2 text-[14px]"></i>
+                    </a><span>Behind S D Jain
                         Modern School, Vesu Piplod Surat, Gujarat
                         395007</span>
                 </p>
@@ -290,17 +297,17 @@
                         class="text-[#000000]">Instagram</span></h3>
                 <div class="grid grid-cols-3 gap-2">
                     <img src="../images/footer1.jpeg" alt="Post"
-                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded hover:scale-105 transition-all duration-3000 cursor-pointer">
                     <img src="../images/footer2.jpeg" alt="Post"
-                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded hover:scale-105 transition-all duration-3000 cursor-pointer">
                     <img src="../images/footer3.jpeg" alt="Post"
-                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded hover:scale-105 transition-all duration-3000 cursor-pointer">
                     <img src="../images/footer4.jpeg" alt="Post"
-                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded hover:scale-105 transition-all duration-3000 cursor-pointer">
                     <img src="../images/footer-5.jpeg" alt="Post"
-                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded hover:scale-105 transition-all duration-3000 cursor-pointer">
                     <img src="../images/footer6.jpeg" alt="Post"
-                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded">
+                        class="w-[110px] md:w-full lg:w-[110px]  h-[66px]  md:h-[66px] lg:h-[66px]  object-cover rounded hover:scale-105 transition-all duration-3000 cursor-pointer">
                 </div>
             </div>
 
@@ -315,7 +322,7 @@
 
 <script>
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 0) {
             $('header').addClass("sticky");
             $('header').addClass("transition-transform");
             $('header').addClass("duration-[3000ms]");
