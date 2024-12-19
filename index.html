@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinaara the Cafe</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
@@ -36,7 +37,7 @@
                 </div>
 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex items-center space-x-6 lg:mr-[100px] xl:mr-[300px] lg:gap-x-6">
+                <nav class="hidden md:flex items-center space-x-6 lg:mr-[45px] xl:mr-[120px] 2xl:mr-[300px] lg:gap-x-6">
                     <div class="bg-[url('../images/Nav-Image.png')] w-[80px] h-[40px] bg-center text-center py-1.5">
                         <a href="index.html" class="text-sm lg:text-lg text-white hover:font-semibold inter">HOME</a>
                     </div>
@@ -113,61 +114,57 @@
     </header>
 
     <!-- banner Section -->
-    <section class="bg-[#f5e2d7] relative pb-6 md:pb-28 lg:pb-32 xl:pb-80">
-        <div>
-            <div class="container mx-auto px-6 lg:px-8">
-                <div class="grid grid-cols-1 my-auto ">
-                    <!-- Text Content -->
-                    <div class="space-y-1 md:space-y-6 text-left md:translate-y-20">
-                        <h2 class="text-[#7c4d3a] text-sm md:text-3xl xl:text-7xl font-bold otomanopee">
-                            KINAARA <span class="text-black">THE</span>
-                        </h2>
-                        <h2 class="text-base text-black md:text-3xl xl:text-7xl font-bold otomanopee">CAFÉ</h2>
-                        <p class="text-xs text-gray-600 lg:text-lg md:text-sm inter text-[#848484]">
-                            "A Blend Of Passion And <br> Perfection In Every Cup"
-                        </p>
-                        <a href="#"
-                            class=" otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-xs lg:text-base rounded hover:bg-[#7c4d3a] hover:text-white">
-                            PLACE ORDER
-                        </a>
-                        <div class="slider-icon flex items-center gap-1">
-                            <a href="#"><i class="fa-solid fa-arrow-left-long text-[#7F5637] text-lg md:pe-2"></i></a>
-                            <a href="#"><i class="fa-regular fa-circle text-[#7F5637] text-xs md:text-sm"></i></a>
-                            <div
-                                class="border-2 border-[#7f5637] rounded-full flex justify-center items-center text-xs md:text-sm">
-                                <a href="#"><i
-                                        class="fa-solid fa-circle text-[#7F5637] px-0.5 md:px-1 text-xs md:text-sm justify-center items-center"></i></a>
-                            </div>
-                            <a href="#"><i class="fa-regular fa-circle text-[#7F5637] text-xs md:text-sm"></i></a>
-                            <a href="#"><i class="fa-regular fa-circle text-[#7F5637] text-xs md:text-sm"></i></a>
-                            <a href="#"><i class="fa-solid fa-arrow-right-long text-[#7F5637] text-lg md:ps-2"></i></a>
-                        </div>
-                    </div>
+    <section class="bg-[#f5e2d7] relative">
+        <div class="container mx-auto">
+          <!-- Swiper -->
+          <div class="swiper mySwiper w-1/2 mx-0 pb-6 md:pb-28 lg:pb-32 xl:pb-80">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide w-1/2">
+                <div class="space-y-1 md:space-y-6 text-left md:translate-y-20">
+                  <h2 class="text-[#7c4d3a] text-sm md:text-3xl xl:text-7xl font-bold otomanopee">KINAARA <span class="text-black">THE</span></h2>
+                  <h2 class="text-base text-black md:text-3xl xl:text-7xl font-bold otomanopee">CAFÉ</h2>
+                  <p class="text-xs text-gray-600 lg:text-lg md:text-sm inter text-[#848484]">"A Blend Of Passion And <br> Perfection In Every Cup"</p>
+                  <a href="#" class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-xs lg:text-base rounded hover:bg-[#7c4d3a] hover:text-white">PLACE ORDER</a>
                 </div>
+              </div>
+              
+              <!-- Slide 2 -->
+              <div class="swiper-slide w-1/2">
+                <div class="space-y-1 md:space-y-6 text-left md:translate-y-20">
+                  <h2 class="text-[#7c4d3a] text-sm md:text-3xl xl:text-7xl font-bold otomanopee">DISCOVER <span class="text-black">OUR</span></h2>
+                  <h2 class="text-base text-black md:text-3xl xl:text-7xl font-bold otomanopee">FLAVORS</h2>
+                  <p class="text-xs text-gray-600 lg:text-lg md:text-sm inter text-[#848484]">"Crafted With Love And Served With A Smile"</p>
+                  <a href="#" class="otomanopee inline-block transition-all bg-transparent border border-[#7c4d3a] text-[#7c4d3a] xl:py-2 xl:px-6 md:py-2 md:px-5 py-1 px-3 text-xs lg:text-base rounded hover:bg-[#7c4d3a] hover:text-white">VIEW MENU</a>
+                </div>
+              </div>
             </div>
-
-            <!-- Coffee Cup Image -->
-            <div class="absolute right-0 bottom-0 w-[45%] sm:w-[30%] md:w-[45%] lg:w-[35%] xl:w-[40%]">
-                <img src="../images/cofee-image.png" class="w-full" alt="Coffee Cup">
-            </div>
-
-            <!-- Wavy Background -->
-            <div class="absolute bottom-0 left-0 w-full">
-                <img src="../images/pseudo.svg" class="w-full" alt="Wavy Background">
-            </div>
-
-            <!-- Decorative Flower Image -->
-            <div class="absolute hidden lg:block lg:top-[-150px] lg:left-0">
-                <img src="../images/flower.png" class="" alt="Decorative Flower">
-            </div>
-
-            <!-- Decorative Coffee Bean -->
-            <div class="absolute hidden lg:block xl:top-[400px] xl:left-[-20px] transform origin-bottom -rotate-12">
-                <img src="../images/coffee.png" class="md:w-[80px] md:h-[80px] xl:w-[98px] xl:h-[98px]"
-                    alt="Coffee Bean">
-            </div>
+          </div>
+    
+          <!-- Custom Buttons for Navigation -->
+          
         </div>
-    </section>
+    
+        <!-- Coffee Cup Image -->
+        <div class="absolute right-0 bottom-0 w-[45%] sm:w-[30%] md:w-[55%] lg:w-[45%] xl:w-[50%] 2xl:w-[40%]">
+          <img src="images/cofee-image.png" class="w-full" alt="Coffee Cup">
+        </div>
+    
+        <!-- Wavy Background -->
+        <div class="absolute bottom-0 left-0 w-full">
+          <img src="images/pseudo.svg" class="w-full" alt="Wavy Background">
+        </div>
+    
+        <!-- Decorative Flower Image -->
+        <div class="absolute hidden lg:block lg:top-[-150px] lg:left-0">
+          <img src="images/flower.png" alt="Decorative Flower">
+        </div>
+    
+        <!-- Decorative Coffee Bean -->
+        <div class="absolute hidden lg:block xl:top-[400px] xl:left-[-20px] transform origin-bottom -rotate-12">
+          <img src="images/coffee.png" class="md:w-[80px] md:h-[80px] xl:w-[98px] xl:h-[98px]" alt="Coffee Bean">
+        </div>
+      </section>
 
     <!-- About us section -->
     <section class="bg-[#F0ECEB] lg:py-32 relative">
@@ -198,23 +195,23 @@
                             </div>
                             <ul class="text-sm md:text-lg text-gray-700 space-y-4 inter">
                                 <li class="flex items-start">
-                                    <div
-                                        class="flex justify-left items-center w-[50px]">
-                                                <img src="images/tick.png" alt="" srcset="" class="w-[26px] h-[26px] object-cover">
+                                    <div class="flex justify-left items-center w-[50px]">
+                                        <img src="images/tick.png" alt="" srcset=""
+                                            class="w-[26px] h-[26px] object-cover">
                                     </div>
                                     <p>Situated At Coast Of Tapi River</p>
                                 </li>
                                 <li class="flex items-start">
-                                    <div
-                                        class="flex justify-left items-center w-[50px]">
-                                                <img src="images/tick.png" alt="" srcset="" class="w-[26px] h-[26px] object-cover">
+                                    <div class="flex justify-left items-center w-[50px]">
+                                        <img src="images/tick.png" alt="" srcset=""
+                                            class="w-[26px] h-[26px] object-cover">
                                     </div>
                                     <p>Featuring An Ambience Which Rejuvenates You Every Time You Visit Us.</p>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <div
-                                        class="flex justify-left items-center w-[50px]">
-                                                <img src="images/tick.png" alt="" srcset="" class="w-[26px] h-[26px] object-cover">
+                                    <div class="flex justify-left items-center w-[50px]">
+                                        <img src="images/tick.png" alt="" srcset=""
+                                            class="w-[26px] h-[26px] object-cover">
                                     </div>
                                     <p>Don't Forget To Try Our Inventive Drinks. It Will Be A Sure Shot Pleasure To Your
                                         Taste
@@ -822,7 +819,8 @@
             <div class="container mx-auto">
                 <div class="flex items-center justify-between px-6 pb-6 pt-10 md:pb-8 md:pt-16 lg:pb-12 lg:pt-20">
                     <div>
-                        <h1 class="text-[14px] md:text-[28px] lg:text-[40px] text-white otomanopee">NEED A TABLE ON COFFEE</h1>
+                        <h1 class="text-[14px] md:text-[28px] lg:text-[40px] text-white otomanopee">NEED A TABLE ON
+                            COFFEE</h1>
                         <h2 class="text-[14px] md:text-[28px] lg:text-[40px] text-white otomanopee">HOUSE</h2>
                     </div>
                     <button
@@ -848,16 +846,20 @@
                     Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Ut Ex Libero, Condimentum At Lectus.
                 </p>
                 <div class="flex space-x-2 text-xl">
-                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-4 transition-all">
+                    <a href="#"
+                        class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-4 transition-all">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-3 transition-all">
+                    <a href="#"
+                        class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-3 transition-all">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" class="bg-[#7f5637] hover:bg-white  text-white hover:text-[#7f5637] rounded-full p-2 px-3 transition-all">
+                    <a href="#"
+                        class="bg-[#7f5637] hover:bg-white  text-white hover:text-[#7f5637] rounded-full p-2 px-3 transition-all">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-3 transition-all">
+                    <a href="#"
+                        class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-2 px-3 transition-all">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </div>
@@ -877,22 +879,31 @@
             <div class="space-y-4">
                 <h3 class="otomanopee text-[22px] font-semibold text-[#7F5637]">Contact <span
                         class="text-[#000000]">Us</span></h3>
-                <p class="inter text-[16px] text-[#737373] ">
-                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-1 mb-3 px-2 me-2 transition-all inline-block">
-                        <i class="fa-solid fa-phone text-[14px] mx-auto text-center"></i>
-                    </a>
-                     <span>063587 50033 - 097265
-                        50033</span> <br>
-                        <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-1 mb-3 px-2.5 me-2 transition-all inline-block">
-                            <i class="fa-solid fa-envelope pb-2 text-[14px]"></i>
+                <div class="inter text-[16px] text-[#737373]">
+                    <div class="flex items-center"><a href="#"
+                            class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-1 mb-2 me-2 w-[40px] h-[40px] flex justify-center items-center transition-all inline-block">
+                            <i class="fa-solid fa-phone text-[14px]"></i>
                         </a>
-                    <span>Kinaara@Gmail.Com</span> <br>
-                    <a href="#" class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-1 mb-3 px-3 me-2 transition-all inline-block">
-                        <i class="fa-solid fa-location-dot pb-2 text-[14px]"></i>
-                    </a><span>Behind S D Jain
-                        Modern School, Vesu Piplod Surat, Gujarat
-                        395007</span>
-                </p>
+                        <p>063587 50033 - 097265
+                            50033</p>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="#"
+                            class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-1 me-2 w-[40px] h-[40px] flex justify-center items-center transition-all inline-block">
+                            <i class="fa-solid fa-envelope text-[14px]"></i>
+                        </a>
+                        <p>Kinaara@Gmail.Com</p>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="#"
+                            class="bg-[#7f5637] hover:bg-white text-white hover:text-[#7f5637] rounded-full p-1 me-2 w-[40px] h-[40px] flex justify-center items-center transition-all inline-block">
+                            <i class="fa-solid fa-location-dot  text-[14px]"></i>
+                        </a>
+                        <p>Behind S D Jain
+                            Modern <br> School, Vesu Piplod <br>Surat, Gujarat
+                            395007</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Instagram Feed -->
@@ -926,7 +937,26 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+<script>
+    // Initialize Swiper
+    const swiper1 = new Swiper(".mySwiper", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-next",
+            prevEl: ".swiper-prev",
+        },
+        pagination: {
+            el: ".slider-icon",
+            clickable: true,
+            bulletClass: "swiper-pagination",
+            bulletActiveClass: "swiper-pagination-active",
+        },
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+</script>
 <script>
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
@@ -944,7 +974,7 @@
 
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper2 = new Swiper(".mySwiper", {
         slidesPerView: 2.5,
         breakpoints: {
             1024: {
@@ -958,7 +988,7 @@
     });
 </script>
 <script>
-    var swiper = new Swiper(".blogSwiper", {
+    var swiper3 = new Swiper(".blogSwiper", {
         slidesPerView: 1.5,
         breakpoints: {
             1024: {
