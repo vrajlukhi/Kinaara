@@ -117,7 +117,7 @@
     <section class="bg-[#f5e2d7] relative">
         <div class="container mx-auto">
           <!-- Swiper -->
-          <div class="swiper mySwiper w-1/2 mx-0 pb-6 md:pb-28 lg:pb-32 xl:pb-80">
+          <div class="swiper mySwiper1 w-1/2 mx-0 pb-6 md:pb-28 lg:pb-32 xl:pb-80">
             <div class="swiper-wrapper">
               <!-- Slide 1 -->
               <div class="swiper-slide w-1/2">
@@ -139,6 +139,28 @@
                 </div>
               </div>
             </div>
+            <div class="slider-icon flex items-center gap-1 justify-center mt-4">
+                <a href="#" class="swiper-prev">
+                  <i class="fa-solid fa-arrow-left-long text-[#7F5637] text-lg md:pe-2"></i>
+                </a>
+                <a href="#" class="swiper-pagination">
+                  <i class="fa-regular fa-circle text-[#7F5637] text-xs md:text-sm"></i>
+                </a>
+                <div class="border-2 border-[#7f5637] rounded-full flex justify-center items-center text-xs md:text-sm">
+                  <a href="#" class="swiper-pagination-active">
+                    <i class="fa-solid fa-circle text-[#7F5637] px-0.5 md:px-1 text-xs md:text-sm"></i>
+                  </a>
+                </div>
+                <a href="#" class="swiper-pagination">
+                  <i class="fa-regular fa-circle text-[#7F5637] text-xs md:text-sm"></i>
+                </a>
+                <a href="#" class="swiper-pagination">
+                  <i class="fa-regular fa-circle text-[#7F5637] text-xs md:text-sm"></i>
+                </a>
+                <a href="#" class="swiper-next">
+                  <i class="fa-solid fa-arrow-right-long text-[#7F5637] text-lg md:ps-2"></i>
+                </a>
+              </div>
           </div>
     
           <!-- Custom Buttons for Navigation -->
@@ -769,35 +791,60 @@
             <div class="container mx-auto px-4">
                 <div class="items-center relative">
                     <!-- Text Section -->
-                    <div class="space-y-6 ">
+                    <div class="space-y-6">
                         <!-- Title -->
                         <h2 class="md:text-[80px] text-[24px] otomanopee font-bold text-[#7F5637]">TESTIMONIALS</h2>
-
-                        <!-- Testimonial Text -->
-                        <p class="text-white md:text-[20px] text-[14px] inter leading-relaxed">
-                            The location is very apt for the evening. The food <br> choices are ample
-                            and the rate is also very decent. <br> The music played there is also
-                            nice. I personally liked <br> the Chinese food here. Also, the drinks were
-                            tasty.
-                        </p>
-
-                        <!-- Client Info -->
-                        <div>
-                            <p class="text-white font-semibold inter md:text-[22px] text-[18px]">Pinaz P</p>
-                            <p class="text-[#7F5637] inter md:text-[22px] text-[18px]">Client of Restaurant</p>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="border-2 border-[#7f5637] rounded-full"><a href="#">
-                                    <i
-                                        class="fa-solid fa-angle-left text-[#7F5637] p-2 px-3 md:px-4 md:p-3  text-xs md:text-sm justify-center items-center"></i></a>
+    
+                        <!-- Testimonial Slider -->
+                        <div class="relative overflow-hidden xl:w-1/2" id="testimonial-slider">
+                            <div class="flex transition-transform duration-500 ease-in-out" id="slider-container">
+                                <!-- Testimonial 1 -->
+                                <div class="testimonial min-w-full px-4">
+                                    <p class="text-white md:text-[20px] text-[14px] inter leading-relaxed">
+                                        The location is very apt for the evening. The food <br> choices are ample
+                                        and the rate is also very decent. <br> The music played there is also
+                                        nice. I personally liked <br> the Chinese food here. Also, the drinks were
+                                        tasty.
+                                    </p>
+                                    <div>
+                                        <p class="text-white font-semibold inter md:text-[22px] text-[18px]">Pinaz P</p>
+                                        <p class="text-[#7F5637] inter md:text-[22px] text-[18px]">Client of Restaurant</p>
+                                    </div>
+                                </div>
+    
+                                <!-- Testimonial 2 (Repeat this structure for more testimonials) -->
+                                <div class="testimonial min-w-full px-4">
+                                    <p class="text-white md:text-[20px] text-[14px] inter leading-relaxed">
+                                        Excellent ambiance and service. The food is delightful, especially the desserts. <br> Highly recommend!
+                                    </p>
+                                    <div>
+                                        <p class="text-white font-semibold inter md:text-[22px] text-[18px]">Alex T</p>
+                                        <p class="text-[#7F5637] inter md:text-[22px] text-[18px]">Regular Customer</p>
+                                    </div>
+                                </div>
+    
+                                <!-- Testimonial 3 -->
+                                <div class="testimonial min-w-full px-4">
+                                    <p class="text-white md:text-[20px] text-[14px] inter leading-relaxed">
+                                        A great place to unwind with friends. The staff is friendly and welcoming. <br> I loved the sushi here!
+                                    </p>
+                                    <div>
+                                        <p class="text-white font-semibold inter md:text-[22px] text-[18px]">Jenna L</p>
+                                        <p class="text-[#7F5637] inter md:text-[22px] text-[18px]">Food Lover</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="border-2 border-[#7f5637] rounded-full"><a href="#">
-                                    <i
-                                        class="fa-solid fa-angle-right text-[#7F5637] p-2 px-3 md:px-4 md:p-3 text-xs md:text-sm justify-center items-center"></i></a>
-                            </div>
-
                         </div>
-
+    
+                        <!-- Navigation Arrows -->
+                        <div class="flex items-center gap-4 mt-4">
+                            <div class="border-2 border-[#7f5637] rounded-full prev-slide cursor-pointer">
+                                <i class="fa-solid fa-angle-left text-[#7F5637] p-2 px-3 md:px-4 md:p-3 text-xs md:text-sm"></i>
+                            </div>
+                            <div class="border-2 border-[#7f5637] rounded-full next-slide cursor-pointer">
+                                <i class="fa-solid fa-angle-right text-[#7F5637] p-2 px-3 md:px-4 md:p-3 text-xs md:text-sm"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="absolute top-[10%] md:top-[25%] left-[1%]">
                         <i class="fa-solid fa-quote-right text-6xl md:text-8xl opacity-20" style="color: #7f5637;"></i>
@@ -939,7 +986,7 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
     // Initialize Swiper
-    const swiper1 = new Swiper(".mySwiper", {
+    const swiper1 = new Swiper(".mySwiper1", {
         loop: true,
         navigation: {
             nextEl: ".swiper-next",
@@ -988,7 +1035,7 @@
     });
 </script>
 <script>
-    var swiper3 = new Swiper(".blogSwiper", {
+    var swiper = new Swiper(".blogSwiper", {
         slidesPerView: 1.5,
         breakpoints: {
             1024: {
@@ -1021,6 +1068,31 @@
             body.style.overflow = ''; // Restore scrolling
         }
     }
+</script>
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.testimonial');
+    const totalSlides = slides.length;
+    const slider = document.getElementById('slider-container');
+    const prevButton = document.querySelector('.prev-slide');
+    const nextButton = document.querySelector('.next-slide');
+
+    const updateSlider = () => {
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+        updateSlider();
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+        updateSlider();
+    });
+
+    // Initialize the slider
+    updateSlider();
 </script>
 
 </html>
